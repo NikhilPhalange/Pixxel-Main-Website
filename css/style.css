@@ -77,14 +77,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 #project_logo {
+    cursor: pointer;
     height: 100%;
     width: 12vw;
     position: relative;
     top: 0;
     left: 0;
-    filter: opacity(0.6);
+    filter: opacity(0.5);
+    transition: 0.3s ease-in-out;
 }
 
+#project_logo:hover {
+    filter: opacity(1);
+}
 /*
 #title {
     display: inline;
@@ -104,6 +109,10 @@ a {
 }
 
 .link {
+    padding: 2vh 1vw 0;
+    height: 10vh;
+    position: absolute;
+    top: -2vh;
     font-size: 2.5vh;
     display: inline-grid;
     vertical-align: middle;
@@ -112,7 +121,6 @@ a {
     flex-direction: row-reverse;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    margin-right: 25px;
 }
 
 .link:hover {
@@ -139,6 +147,11 @@ a {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.currentLink {
+  background-color: #04151C;
+}
+
 #bookmarks {
 
 }
@@ -197,7 +210,7 @@ a {
 
 .details {
   display: block;
-  background-color: #C2A3FF;
+  background-color: #82CEEC;
   /* filter: opacity(0.7); */
   transform: scale(0);
   text-align: left;
@@ -218,14 +231,19 @@ a {
 
 #intro {
     position: relative;
-    height: 500px;
-    width: 100vw;
-    left: 0;
+    text-align: center;
+    height: 200px;
+    top: 30vh;
+    width: 35vw;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0 auto;
     z-index: -5;
 }
 
 #crop_earth {
-  margin-top: -20vh;
+  margin-top: 30vh;
   width: 38vw;
   max-height: 45vh;
   overflow: hidden;
@@ -287,16 +305,14 @@ a {
 
 #intro_text {
     font-weight: 100;
-    width: 30vw;
-    padding: 1vh;
-    font-size: 2.7vh;
-    right: 5vw;
-    top: 43vh;
+    width: 80%;
+    font-size: 3.3vh;
     color: whitesmoke;
     border-radius: 10px;
     position: absolute;
     z-index: 20;
-    background-color: #04151C;
+    text-align: center;
+    margin: 5% 10%;
     /* #82CEEC; #00395E */
 
 }
@@ -315,7 +331,7 @@ a {
   margin-left: 30px;
   font-size: 60px;
   font-weight: 100;
-  margin-top: 25vh;
+  margin-top: 80vh;
 }
 
 .box {
