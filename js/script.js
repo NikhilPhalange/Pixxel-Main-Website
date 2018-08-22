@@ -53,7 +53,7 @@ function CurrentLink(){
     var a = document.getElementsByTagName("A");
     for(var i=0;i<a.length;i++){
         if(a[i].href.split("#")[0] == window.location.href.split("#")[0] && a[i].classList.contains('link')) {
-          a[i].classList.add('currentLink');
+          a[i].parentElement.classList.add('currentLink');
         }
     }
 }
