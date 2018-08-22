@@ -883,3 +883,225 @@ will-change: transform, opacity;
     font-size: 2vh;
   }
 }
+@media only screen and (max-width: 600px) {
+  #top_nav {
+      position: fixed;
+      top: 0;
+      left: 0vw;
+      width: 110vw;
+      height: 7vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      z-index: 200;
+  }
+  #project_logo {
+      cursor: pointer;
+      height: 7vh;
+      width: 35vw;
+      position: relative;
+      top: 0;
+      left: 0;
+      filter: opacity(0.5);
+      transition: 0.3s ease-in-out;
+  }
+  #btn {
+    display: block;
+  }
+  #top_nav_list {
+    display: none;
+  }
+  #box {
+    display: block;
+  }
+  #navigate_elements {
+    display: none;
+  }
+  .link {
+      padding: 2vh 1vw 0;
+      height: 10vh;
+      position: absolute;
+      top: 0;
+      font-size: 2.5vh;
+      display: inline-grid;
+      vertical-align: middle;
+      position: relative;
+      color: lightgray;
+      flex-direction: row-reverse;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+  }
+
+  .item:hover {
+      color: white;
+  }
+
+  .item:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 1px;
+      left: 0;
+      background-color: white;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+  }
+
+  .item:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+  }
+  .item:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 1px;
+      left: 0;
+      background-color: white;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+  }
+
+  .item:hover:after {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+  }
+  .link:hover:before {
+    visibility: hidden;
+  }
+  #intro {
+      position: relative;
+      text-align: center;
+      height: 20vh;
+      top: 35vh;
+      width: 55vw;
+  }
+  #intro_text {
+      font-size: 1.5vh;
+      color: whitesmoke;
+      border-radius: 10px;
+      position: absolute;
+      z-index: 20;
+      text-align: center;
+      margin: 5% 10%;
+  }
+  #crop_earth {
+    margin: -5vh 31vw 5vh;
+    width: 38vw;
+    max-height: 40vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: -10;
+    /* border-bottom: 2px solid #83CEED;
+    border-bottom-style: dashed; */
+  }
+  #earth {
+      margin: 0 auto;
+      width: 38vw;
+      height: 38vw;
+      margin-left: 0;
+      margin-bottom: 0;
+  }
+  .member {
+    width: 30vw;
+  }
+
+  .member img {
+    width: 30vw;
+  }
+  .name, .dept {
+    font-size: 2.5vh;
+  }
+  #mission_heading {
+    margin-top: 40vh;
+  }
+  .box {
+    height: 13vh;
+    width: 20%;
+    margin:0 auto;
+    padding: 1vh;
+  }
+  .box p, #partners p {
+    font-size: 0.7vh;
+  }
+  #making_container {
+    height: 35vh;
+  }
+  #making_container p {
+    font-size: 1vh;
+  }
+  #making_container h1 {
+    font-size: 3vh;
+  }
+  #making_container h2 {
+    font-size: 2vh;
+  }
+  #team_heading {
+    font-size: 3vh;
+  }
+  #centre_circle {
+    visibility: hidden;
+  }
+  #team_img {
+    width: 100%;
+    height: 60%;
+    margin-top: 6vh;
+    margin-left: 10vw;
+  }
+  #team_info {
+    width: 80%;
+  }
+  #review {
+    padding: 1vh;
+    height: 20vh;
+    width: 90vw;
+    border: none;
+  }
+  #review_image {
+    margin: 0.1vh 1vh -4vh;
+    height: 70%;
+    width: 40vw;
+  }
+  #review_detail {
+    margin: 0.1vh 0vh -4vh;
+    width: 60vw;
+  }
+  #review_detail p {
+    font-size: 1.3vh;
+  }
+  #review_detail h2{
+    font-style: 2vh;
+  }
+  #review_detail h3 {
+    font-size: 1.5vh;
+  }
+  #team_info p {
+    font-size: 1vh;
+  }
+  #team_button {
+    width: 30vw;
+    font-size: 1.5vh;
+    padding: 0.5vh;
+  }
+  #team {
+    height: 30vh;
+  }
+  #partners {
+    height: 30vh;
+  }
+  #partners_heading {
+    font-size: 5vw;
+  }
+  #featured_in h1 {
+    font-size: 3vh;
+  }
+}
