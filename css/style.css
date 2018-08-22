@@ -102,6 +102,7 @@ body::-webkit-scrollbar-thumb {
     float: right;
     list-style-type: none;
     line-height: 5vh;
+    margin-right: 1vw;
 }
 
 a {
@@ -112,7 +113,7 @@ a {
     padding: 2vh 1vw 0;
     height: 10vh;
     position: absolute;
-    top: -2vh;
+    top: -2.3vh;
     font-size: 2.5vh;
     display: inline-grid;
     vertical-align: middle;
@@ -336,12 +337,12 @@ a {
 
 .box {
   scroll-behavior: smooth;
-  margin: -4vh 2vw;
-  border-radius: 20px;
+  margin: -4vh 4vw;
+  border-radius: 50%;
   background-color: white;
-  height: 300px;
-  width: 30%;
-  padding: 20px;
+  height: 50vh;
+  width: 25%;
+  padding: 5vh;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -349,8 +350,8 @@ a {
 
 .square {
     margin: 0 auto;
-    width: 10vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8vw;
     background-color: white;
     border-radius: 10px;
 }
@@ -577,4 +578,57 @@ a {
   position: relative;
   right: -60vw;
   margin-bottom: -100vh;
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+#team_title {
+  text-align: center;
+  width: 100vw;
+  top: 12vh;
+  position: absolute;
+}
+
+ #team_title h1 {
+  color: #7DBFD3;
+  font-weight: 200;
+  font-size: 4vw;
+}
+
+#team_container {
+  top: 30vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+.member {
+  margin: 10vh auto 5vh;
+  width: 15vw;
+  min-height: 0;
+}
+
+.member img {
+  background-color: grey;
+  border-radius: 10px;
+  width: 15vw;
+  height: 30vh;
+}
+
+.name {
+  font-size: 1.3vw;
+  color: white;
+  text-align: center;
+}
+
+.dept {
+  font-size: 1.3vw;
+  color: grey;
+  text-align: center;
 }
