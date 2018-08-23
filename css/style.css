@@ -341,7 +341,7 @@ a {
   margin: -4vh 4vw;
   border-radius: 50%;
   background-color: white;
-  height: 50vh;
+  height: 55vh;
   width: 25%;
   padding: 5vh;
   display: flex;
@@ -357,10 +357,16 @@ a {
     border-radius: 10px;
 }
 
+.box h1 {
+  text-align: center;
+  font-size: 3.8vh;
+  font-weight: 600;
+}
+
 .box p {
   font-weight: 300;
   color: black;
-  font-size: 2.8vh;
+  font-size: 2.5vh;
 }
 
 #making_heading {
@@ -374,7 +380,7 @@ a {
 #making_container {
   width: 95vw;
   margin: 0 auto;
-  height: 45vh;
+  height: 55vh;
   background-color: #D2F5FF;
   border-radius: 10px;
   display: flex;
@@ -570,14 +576,81 @@ a {
   background-color: transparent;
   width: 100vw;
   height: 45vh;
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 0;
+  overflow: hidden;
+}
+
+#media {
+  width: 30vw;
+  height: 30vh;
+  position: absolute;
+  margin-top: -2vh;
+  margin-left: 4vw;
+  text-align: center;
+}
+
+#media h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 4.5vh;
+}
+
+.media_icons {
+  width: 4vw;
+  height: 4vw;
+  background-color: transparent;
+  float: left;
+  margin: 2vh 2.5vw;
+  transition: 0.3s ease;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+/* .media a{
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scale(1);
+} */
+
+#media a:hover .media_icons{
+  transform: scale(1.2);
 }
 
 #earth2 {
-  height: 80vh;
-  width: 90vw;
-  position: relative;
-  right: -60vw;
-  margin-bottom: -100vh;
+  height: 130vh;
+  width: 170vw;
+  position: absolute;
+  right: -70vw;
+  bottom: -100vh;
+}
+
+#newsletter {
+  position: absolute;
+  margin-top: 0vh;
+  right: 15vw;
+  height: 30vh;
+  border-left: 2px solid white;
+  padding: 0.2vh 3vw 5vh;
+}
+
+#newsletter h1 {
+  /* margin-top: -2vh; */
+  color: white;
+  font-weight: 400;
+}
+
+input[type="email"] {
+  background-color: #D2F5FF;
+  border-radius: 5px;
+  border: none;
+  width: 30vw;
+  font-size: 3vh;
+  color: #04151C;
+  height: 6vh;
+  cursor: text;
+  position: absolute;;
 }
 
 
@@ -618,7 +691,7 @@ a {
   background-color: grey;
   border-radius: 10px;
   width: 15vw;
-  height: 30vh;
+  height: 33vh;
 }
 
 .name {
