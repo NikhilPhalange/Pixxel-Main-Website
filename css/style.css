@@ -1143,11 +1143,11 @@ Masking
       margin-bottom: 0;
   }
   .member {
-    width: 40vw;
+    width: 30vw;
   }
 
   .member img {
-    width: 40vw;
+    width: 30vw;
   }
   .name, .dept {
     font-size: 2.5vh;
