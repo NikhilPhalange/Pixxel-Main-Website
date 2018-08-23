@@ -396,6 +396,7 @@ a {
   width: 90%;
   background-color: white;
   border-radius: 50%;
+  display: block;
 }
 
 #making_container h1 {
@@ -429,6 +430,10 @@ a {
   border-radius: 10px;
   align-content: center;
   padding: 2vh;
+}
+
+#team_container {
+  display: block;
 }
 
 #team_info {
@@ -798,7 +803,227 @@ will-change: transform;
 #box {
 will-change: transform, opacity;
 }
+/* --------------------------------------------------CAROUSEL--------------------------------------------------------------- */
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+}
+
+.hero-slider {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-slider .carousel-cell {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-slider .carousel-cell .slide-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.hero-slider .carousel-cell .slide-content .title {
+  position: relative;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-slider .carousel-cell .slide-content .caption {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.hero-slider .carousel-cell .slide-content .btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.hero-slider .carousel-cell .slide-content .btn:hover {
+  background: #fff;
+  color: #000;
+  transition: all .2s ease;
+}
+.hero-slider .flickity-prev-next-button {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+}
+.hero-slider .flickity-prev-next-button:hover {
+  background: transparent;
+}
+.hero-slider .flickity-prev-next-button .arrow {
+  fill: white;
+}
+.hero-slider .flickity-page-dots {
+  bottom: 30px;
+}
+.hero-slider .flickity-page-dots .dot {
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0 solid white;
+  border-radius: 0;
+}
+.hero-slider .flickity-page-dots .dot.is-selected {
+  background: #ff0000;
+  border: 0 solid #ff0000;
+}
+
+/* --------------------------------
+Masking
+-------------------------------- */
+.slide-content .title,
+.slide-content .caption,
+.slide-content .btn {
+  position: relative;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide-content.mask .mask {
+  position: relative;
+  overflow: hidden;
+}
+.slide-content.mask .title {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-name: slide-up;
+          animation-name: slide-up;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  opacity: 1;
+}
+.slide-content.mask .divider {
+  display: inline-block;
+  position: relative;
+  margin: 5px auto;
+  height: 2px;
+  width: 60%;
+  background-color: #ffffff;
+  -webkit-animation: divider-mask 1s 0.3s both;
+          animation: divider-mask 1s 0.3s both;
+}
+.carousel-cell {
+  width: 33%;
+  height: 160px;
+  margin-right: 10px;
+}
+.carousel-cell.size-180 { width: 180px; }
+.carousel-cell.size-large { width: 75%; }
+.slide-content.mask .caption,
+.slide-content.mask .btn {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-name: slide-down;
+          animation-name: slide-down;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes divider-mask {
+  0%,
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  40%,
+  60% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes divider-mask {
+  0%,
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  40%,
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
+@media only screen and (max-width:1000px) {
+  .member {
+    width: 30vw;
+  }
+  .member img {
+    width: 30vw;
+  }
+}
 @media only screen and (max-width: 600px) {
   #project_logo {
       cursor: pointer;
@@ -918,11 +1143,11 @@ will-change: transform, opacity;
       margin-bottom: 0;
   }
   .member {
-    width: 30vw;
+    width: 40vw;
   }
 
   .member img {
-    width: 30vw;
+    width: 40vw;
   }
   .name, .dept {
     font-size: 2.5vh;
@@ -955,8 +1180,17 @@ will-change: transform, opacity;
   #team_info p {
     font-size: 2vh;
   }
+  #team_title h1 {
+    font-size: 50px;
+  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 420px) {
+  .hero-slider {
+    display: block;
+  }
+  #team_container {
+    display: none;
+  }
   #top_nav {
       position: fixed;
       top: 0;
@@ -1084,12 +1318,15 @@ will-change: transform, opacity;
       margin-left: 0;
       margin-bottom: 0;
   }
+  #team_title h1 {
+    font-size: 40px;
+  }
   .member {
-    width: 30vw;
+    width: 50vw;
   }
 
   .member img {
-    width: 30vw;
+    width: 50vw;
   }
   .name, .dept {
     font-size: 2.5vh;
@@ -1122,7 +1359,7 @@ will-change: transform, opacity;
     font-size: 3vh;
   }
   #centre_circle {
-    visibility: hidden;
+    display: none;
   }
   #team_img {
     width: 100%;
@@ -1176,5 +1413,89 @@ will-change: transform, opacity;
   }
   #featured_in h1 {
     font-size: 3vh;
+  }
+  #social {
+    background-color: transparent;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  #media {
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #media h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 2vh;
+  }
+
+  .media_icons {
+    width: 6vw;
+    height: 6vw;
+    background-color: transparent;
+    float: left;
+    margin: 2vw;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /* .media a{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+  } */
+
+  #media a:hover .media_icons{
+    transform: scale(1.2);
+  }
+
+  #earth2 {
+    height: 130vh;
+    width: 170vw;
+    position: absolute;
+    right: -70vw;
+    bottom: -100vh;
+  }
+
+  #newsletter {
+    position: absolute;
+    margin-top: -10vh;
+    left: 0;
+    height: 30vh;
+    width: 100vw;
+    border-left: none;
+    padding: 1vh;
+  }
+
+  #newsletter h1 {
+    /* margin-top: -2vh; */
+    font-size: 2vh;
+    color: white;
+    font-weight: 400;
+  }
+
+  input[type="email"] {
+    background-color: #D2F5FF;
+    border-radius: 5px;
+    border: none;
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1vh;
+    color: #04151C;
+    height: 3vh;
+    cursor: text;
+    position: absolute;;
   }
 }
