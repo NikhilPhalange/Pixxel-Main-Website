@@ -838,24 +838,25 @@ will-change: transform, opacity;
 }
 .hero-slider .carousel-cell .slide-content .title {
   position: relative;
-  font-family: "Fjalla One", sans-serif;
+  /* font-family: "Fjalla One", sans-serif; */
   font-size: 3.2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .hero-slider .carousel-cell .slide-content .caption {
-  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Noto Sans", sans-serif; */
   font-size: 2.2rem;
   color: #ffffff;
   margin-bottom: 30px;
+  font-weight: 200;
 }
 .hero-slider .carousel-cell .slide-content .btn {
   display: inline-block;
   border: 1px solid #fff;
   padding: 14px 18px;
   text-transform: uppercase;
-  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Noto Sans", sans-serif; */
   font-size: 0.9rem;
   letter-spacing: 2px;
   color: #fff;
@@ -900,6 +901,7 @@ Masking
 .slide-content .caption,
 .slide-content .btn {
   position: relative;
+  font-weight: 200;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -1025,6 +1027,12 @@ Masking
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero-slider {
+    display: block;
+  }
+  #team_container {
+    display: none;
+  }
   #project_logo {
       cursor: pointer;
       height: 10vh;
