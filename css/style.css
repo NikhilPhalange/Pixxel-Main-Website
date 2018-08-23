@@ -244,10 +244,11 @@ a {
     z-index: -5;
 }
 
-#crop_earth {
-  margin-top: 30vh;
+#anim_earth {
+  margin-top: 20vh;
   width: 38vw;
-  max-height: 45vh;
+  height: 55vh;
+  margin-bottom: 5vh;
   overflow: hidden;
   margin-left: -5vw;
   position: absolute;
@@ -257,52 +258,109 @@ a {
 }
 
 #earth {
-    margin-bottom: -15vh;
+    margin-bottom: -5vh;
     margin-left: -14vw;
     width: 58vw;
-    height: 72vh;
+    height: 58vw;
 }
 
-#orbits {
-  z-index: -20;
-  position: absolute;
-  margin-top: -30vh;
-  width: 50vw;
-  max-height: 60vh;
+#anim_greenorbit {
+  margin-top: 10vh;
+  width: 54vw;
+  max-height: 65vh;
   overflow: hidden;
-  margin-left: -15vw;
-}
-
-#lightblue_orbit {
-  width: 65vw;
-  height: 160vh;
-  bottom: -20vh;
-  left: -10vw;
-}
-
-#blue_box {
-  margin-top: 15vh;
-  margin-left: 5vw;
-  width: 25vw;
-  height: 25vw;
+  margin-left: -5vw;
   position: absolute;
-  z-index: 30;
-  animation: rotateBox 5s infinite;
+  z-index: -40;
 }
 
-@keyframes rotateBox {
-  0% {
-      margin-top: 85vh;
-      margin-left: 55vw;
-  }
-  50% {
-    margin-top: 95vh;
-    margin-left: 15vw;
-  }
-  100% {
-    margin-top: 85vh;
-    margin-left: 55vw;
-  }
+#green_orbit {
+  width: 68vw;
+  height: 64vw;
+  margin-bottom: -26vh;
+  margin-left: -21vw;
+  z-index: -40;
+  animation-name: rotate_orbits;
+  animation-duration: 30000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#anim_orangeorbit {
+  margin-top: -2vh;
+  width: 64vw;
+  max-height: 77vh;
+  overflow: hidden;
+  margin-left: -5vw;
+  position: absolute;
+  z-index: -60;
+}
+
+
+#orange_orbit {
+  width: 72vw;
+  height: 70vw;
+  margin-bottom: -22vh;
+  margin-left: -21vw;
+  z-index: -40;
+  animation-name: rotate_orbits;
+  animation-duration: 20000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate3d(120deg);
+}
+
+#anim_blueorbit {
+  margin-top: -14vh;
+  width: 64vw;
+  max-height: 90vh;
+  overflow: hidden;
+  margin-left: -5vw;
+  position: absolute;
+  z-index: -60;
+}
+
+
+#blue_orbit {
+  width: 78vw;
+  height: 78vw;
+  margin-bottom: -16vh;
+  margin-left: -21vw;
+  z-index: -40;
+  animation-name: rotate_orbits;
+  animation-duration: 35000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#anim_purpleorbit {
+  margin-top: -20vh;
+  width: 64vw;
+  max-height: 95vh;
+  overflow: hidden;
+  margin-left: -5vw;
+  position: absolute;
+  z-index: -60;
+}
+
+
+#purple_orbit {
+  width: 82vw;
+  height: 82vw;
+  margin-bottom: -16vh;
+  margin-left: -21vw;
+  z-index: -40;
+  animation-name: rotate_orbits;
+  animation-duration: 35000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate_orbits{
+
+0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+
 }
 
 #intro_text {
@@ -648,7 +706,7 @@ a {
 
 input[type="email"] {
   background-color: #D2F5FF;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   width: 30vw;
   font-size: 3vh;
@@ -658,7 +716,25 @@ input[type="email"] {
   position: absolute;;
 }
 
+#submit {
+  margin-left: 31vw;
+  width: 10vw;
+  height: 6vh;
+  background-color: #82CEEC;
+  color: black;
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.4vh;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
+#submit:hover {
+  border: 1px solid #82CEEC;
+  background-color: #04151C;
+  color: #82CEEC;
+}
 
 /* ------------------------------------------------------------------------------------ */
 
