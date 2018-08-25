@@ -2,22 +2,27 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1024px" height="768px" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+	 width="768px" height="768px" viewBox="0 0 768 768" enable-background="new 0 0 768 768" xml:space="preserve">
 <g>
 	<g>
-		<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M126.857,389
-			c0-242.16,189.098-368.755,368.754-368.755"/>
-		<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M486.295,20.245
-			c242.16,0,368.756,189.098,368.756,368.752"/>
+		<g>
+			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M26.857,390
+				c0-242.16,189.098-368.755,368.754-368.755"/>
+			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
+				M386.295,21.245c242.16,0,368.756,189.098,368.756,368.751"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M754.392,380
+				c0,242.156-189.098,368.755-368.754,368.755"/>
+			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
+				M394.954,748.755c-242.16,0-368.756-189.102-368.756-368.755"/>
+		</g>
 	</g>
-	<g>
-		<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M854.392,379
-			c0,242.157-189.098,368.755-368.754,368.755"/>
-		<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
-			M494.954,747.755c-242.16,0-368.756-189.101-368.756-368.755"/>
-	</g>
+	
+		<rect x="678.004" y="161.812" transform="matrix(0.6477 0.7619 -0.7619 0.6477 376.003 -464.6552)" fill="#F79B48" width="24.878" height="24.879"/>
+	
+		<rect x="14.435" y="324.812" transform="matrix(-0.3208 0.9471 -0.9471 -0.3208 354.9249 419.9849)" fill="#F79B48" width="24.88" height="24.88"/>
+	
+		<rect x="612.991" y="657.788" transform="matrix(0.6477 0.7619 -0.7619 0.6477 730.9526 -240.3943)" fill="#F79B48" width="24.878" height="24.88"/>
 </g>
-<rect x="778.019" y="160.807" transform="matrix(-0.6477 -0.7619 0.7619 -0.6477 1170.4254 887.7138)" fill="#F79B48" width="24.878" height="24.879"/>
-<rect x="114.418" y="323.81" transform="matrix(0.3208 -0.9472 0.9472 0.3208 -232.316 348.5427)" fill="#F79B48" width="24.879" height="24.879"/>
-<rect x="713.009" y="656.793" transform="matrix(-0.6477 -0.7619 0.7619 -0.6477 685.4137 1655.4087)" fill="#F79B48" width="24.878" height="24.879"/>
 </svg>

@@ -47,13 +47,11 @@ function enlarge3() {
   }
 }
 
-// window.onload = CurrentLink();
-//
-// function CurrentLink(){
-//     var a = document.getElementsByTagName("A");
-//     for(var i=0;i<a.length;i++){
-//         if(a[i].href.split("#")[0] == window.location.href.split("#")[0] && a[i].parentElement.id != 'logo' && (a[i].href.contains('.html')) {
-//           a[i].classList.add('currentLink');
-//         }
-//     }
-// }
+var orbits = document.getElementsByClassName("orbit");
+for(i=0; i<orbits.length; i++) {
+    y = orbits[i].getBoundingClientRect().top;
+    x = orbits[i].getBoundingClientRect().left;
+    height = orbits[i].offsetHeight;
+    width = orbits[i].offsetWidth;
+    orbits[i].style.transformOrigin = x+width/2 + " " + -(y+height/2);
+}
