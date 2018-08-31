@@ -1,4 +1,4 @@
-var sidebarBox = document.querySelector('#box'),
+var sidebarBox = document.querySelector('#sidenav_box'),
 sidebarBtn = document.querySelector('#btn'),
 pageWrapper = document.querySelector('#page-wrapper');
 
@@ -7,13 +7,13 @@ sidebarBtn.addEventListener('click', function (event) {
         sidebarBox.classList.toggle('active');
 });
 
-pageWrapper.addEventListener('click', function (event) {
-
-        if (sidebarBox.classList.contains('active')) {
-                sidebarBtn.classList.remove('active');
-                sidebarBox.classList.remove('active');
-        }
-});
+// pageWrapper.addEventListener('click', function (event) {
+//
+//         if (sidebarBox.classList.contains('active')) {
+//                 sidebarBtn.classList.remove('active');
+//                 sidebarBox.classList.remove('active');
+//         }
+// });
 
 window.addEventListener('keydown', function (event) {
 
