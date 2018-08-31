@@ -955,6 +955,10 @@ Masking
   .member img {
     width: 30vw;
   }
+  #earth {
+    height: 52vw;
+    width: 52vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   .hero-slider {
@@ -1047,6 +1051,9 @@ Masking
   .link:hover:before {
     visibility: hidden;
   }
+  #earth {
+
+  }
   #intro {
       position: relative;
       text-align: center;
@@ -1064,8 +1071,9 @@ Masking
       margin: 5% 10%;
   }
 
-  #animation {
-
+  #earth {
+    height: 52vw;
+    width: 52vw;
   }
 
   .member {
