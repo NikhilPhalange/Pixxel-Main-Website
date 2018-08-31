@@ -143,7 +143,7 @@ a {
     height: 30vh;
     top: 30vh;
     width: 35vw;
-    background: transparent;
+    background: #04151C;
     border: 1px solid whitesmoke;
     border-radius: 10px;
     margin: 0 auto;
@@ -163,7 +163,7 @@ a {
 }
 
 #animation {
-  width: 60vw;
+  width: 80vw;
   position: absolute;
   height: 100vh;
   left: 0vw;
@@ -171,8 +171,6 @@ a {
   margin-top: -20vh;
 }
 .orbit {
-    height: 800px;
-    width: 800px;
     position: absolute;
     bottom: 0vw;
     left: 0;
@@ -196,28 +194,28 @@ a {
     }
 }
 #orbit1 {
-    height: 800px;
-    width: 800px;
+    height: 58.125vw;
+    width:  58.125vw;
     animation: rotate 35s linear infinite;
 }
 #orbit2 {
-    height: 900px;
-    width: 900px;
+    height: 64.89vw;
+    width: 64.89vw;
     animation: rotate 20s linear infinite;
 }
 #orbit3 {
-    height: 1000px;
-    width: 1000px;
+    height: 70.65vw;
+    width: 70.65vw;
     animation: rotate 30s linear infinite;
 }
 #orbit4 {
-    height: 1100px;
-    width: 1100px;
+    height: 76.42vw;
+    width: 76.42vw;
     animation: rotate 10s linear infinite;
 }
 #orbit5 {
-    height: 1200px;
-    width: 1200px;
+    height: 82.18vw;
+    width: 82.18vw;
     animation: rotate 15s linear infinite;
 }
 @keyframes rotate {
@@ -1065,13 +1063,10 @@ Masking
     /* border-bottom: 2px solid #83CEED;
     border-bottom-style: dashed; */
   }
-  #earth {
-      margin: 0 auto;
-      width: 38vw;
-      height: 38vw;
-      margin-left: 0;
-      margin-bottom: 0;
+  #animation {
+
   }
+
   .member {
     width: 30vw;
   }
@@ -1219,11 +1214,11 @@ Masking
       position: relative;
       text-align: center;
       height: 20vh;
-      top: 35vh;
-      width: 55vw;
+      top: 65vh;
+      width: 75vw;
   }
   #intro_text {
-      font-size: 1.5vh;
+      font-size: 2vh;
       color: whitesmoke;
       border-radius: 10px;
       position: absolute;
@@ -1231,23 +1226,62 @@ Masking
       text-align: center;
       margin: 5% 10%;
   }
-  #crop_earth {
-    margin: -5vh 31vw 5vh;
-    width: 38vw;
-    max-height: 40vw;
-    overflow: hidden;
+  #animation {
+    width: 90vw;
     position: absolute;
-    z-index: -10;
-    /* border-bottom: 2px solid #83CEED;
-    border-bottom-style: dashed; */
+    height: 100vh;
+    left: 30vw;
+    margin: -70vh auto 10vh;
+    overflow: visible;
+  }
+  .orbit {
+      bottom: 10vh;
+      left: 20vw;
+      position: absolute;
+      transform: translateX(0) translateY(0);
   }
   #earth {
-      margin: 0 auto;
-      width: 38vw;
-      height: 38vw;
-      margin-left: 0;
-      margin-bottom: 0;
+      bottom: -4vh;
+      left: -2.5vw;
+      height: 52vw;
+      width: 52vw;
+      transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
   }
+
+  @keyframes rotateEarth {
+      0% {
+          transform: rotateZ(0deg);
+      }
+      100% {
+          transform: rotateZ(360deg);
+      }
+  }
+  #orbit1 {
+      height: 58.125vw;
+      width:  58.125vw;
+      animation: rotate 35s linear infinite;
+  }
+  #orbit2 {
+      height: 64.89vw;
+      width: 64.89vw;
+      animation: rotate 20s linear infinite;
+  }
+  #orbit3 {
+      height: 70.65vw;
+      width: 70.65vw;
+      animation: rotate 30s linear infinite;
+  }
+  #orbit4 {
+      height: 76.42vw;
+      width: 76.42vw;
+      animation: rotate 10s linear infinite;
+  }
+  #orbit5 {
+      height: 82.18vw;
+      width: 82.18vw;
+      animation: rotate 15s linear infinite;
+  }
+
   #team_title h1 {
     font-size: 40px;
   }
@@ -1262,7 +1296,7 @@ Masking
     font-size: 2.5vh;
   }
   #mission_heading {
-    margin-top: 40vh;
+    margin-top: 70vh;
   }
   .box {
     height: 13vh;
