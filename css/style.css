@@ -92,6 +92,8 @@ body::-webkit-scrollbar-thumb {
     list-style-type: none;
     line-height: 5vh;
     margin-right: 1vw;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 a {
@@ -104,7 +106,7 @@ a {
     position: absolute;
     top: 0;
     font-size: 2.5vh;
-    display: inline-grid;
+    display: inline-block;
     vertical-align: middle;
     position: relative;
     color: lightgray;
@@ -949,15 +951,178 @@ Masking
 
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
+  #intro {
+    height: 35vh;
+  }
+  .link {
+    padding: 3vh 2vw 0;
+  }
   .member {
-    width: 30vw;
+    width: 20vw;
+    margin-left: 10vw;
   }
   .member img {
-    width: 30vw;
+    width: 20vw;
   }
   #earth {
     height: 52vw;
     width: 52vw;
+  }
+  #making_heading {
+    font-size: 8vh;
+  }
+  #making_container h1 {
+    font-size: 4.5vh;
+  }
+  #making_container h2 {
+    font-size: 4vh;
+  }
+  #making_container p {
+    font-size: 3vh;
+  }
+  #team p {
+    font-size: 3vh;
+    margin-top: -2vh;
+  }
+  #review {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    margin: 2vh auto;
+    border: none;
+  }
+
+  #review_image {
+    border-radius: 50%;
+    background-color: white;
+    width: 25%;
+    height: 100%;
+    margin: 1vh -6vh;
+  }
+
+  #review_detail {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 0.4vh;
+    margin: -2vh 12vh;
+  }
+
+  #review_detail h2 {
+    color: white;
+    font-weight: 200;
+    font-weight: 4vh;
+    margin-top: 3vh;
+  }
+
+  #review_detail h3 {
+    margin-top: -2vh;
+    color: #999999;
+    font-weight: 100;
+    font-size: 3vh;
+  }
+
+  #review p {
+    font-size: 2.5vh;
+    color: whitesmoke;
+    font-weight: 200;
+  }
+  #social {
+    background-color: transparent;
+    width: 100vw;
+    height: 45vh;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  #media {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    margin-top: -2vh;
+    margin-left: 4vw;
+    text-align: center;
+  }
+
+  #media h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 4.5vh;
+  }
+
+  .media_icons {
+    width: 4vw;
+    height: 4vw;
+    background-color: transparent;
+    float: left;
+    margin: 2vh 2.5vw;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  #media a:hover .media_icons{
+    transform: scale(1.2);
+  }
+
+  #earth2 {
+    height: 130vh;
+    width: 170vw;
+    position: absolute;
+    right: -70vw;
+    bottom: -100vh;
+  }
+
+  #newsletter {
+    position: absolute;
+    margin-top: 0vh;
+    right: 15vw;
+    height: 30vh;
+    border-left: 2px solid white;
+    padding: 0.2vh 3vw 5vh;
+  }
+
+  #newsletter h1 {
+    /* margin-top: -2vh; */
+    color: white;
+    font-size: 4vh;
+    font-weight: 400;
+  }
+
+  input[type="email"] {
+    background-color: #D2F5FF;
+    border-radius: 10px;
+    border: none;
+    width: 30vw;
+    font-size: 3vh;
+    color: #04151C;
+    height: 6vh;
+    cursor: text;
+    position: absolute;;
+  }
+
+  #submit {
+    margin-left: 31vw;
+    width: 10vw;
+    height: 6vh;
+    background-color: #82CEEC;
+    color: black;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.4vh;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  #submit:hover {
+    border: 1px solid #82CEEC;
+    background-color: #04151C;
+    color: #82CEEC;
   }
 }
 @media only screen and (max-width: 600px) {

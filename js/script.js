@@ -55,3 +55,25 @@ for(i=0; i<orbits.length; i++) {
     width = orbits[i].offsetWidth;
     orbits[i].style.transformOrigin = x+width/2 + " " + -(y+height/2);
 }
+
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      var elem = document.querySelector('.main-carousel');
+      var flkty = new Flickity( elem, {
+  // options
+      cellAlign: 'left',
+      contain: true
+      });
+
+// element argument can be a selector string
+//   for an individual element
+      var flkty = new Flickity( '.main-carousel', {
+  // options
+      });
+    }
+}
+
+var x = window.matchMedia("(max-width: 600px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
