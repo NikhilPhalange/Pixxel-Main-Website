@@ -385,20 +385,20 @@ a {
 
 #team_button {
   width: 25vw;
-  background-color: #D2F5FF;
   padding: 2vh;
+  border: 1px solid #D2F5FF;
+  background-color: #00395E;
+  color: #D2F5FF;
   text-align: center;
   font-size: 3vh;
-  color: #00395E;
   border-radius: 10px;
   transition: 0.2s ease-in-out;
-  border: 2px solid #D2F5FF;
 }
 
 #team_button:hover {
+  background-color: #D2F5FF;
+  color: #00395E;
   border: 2px solid #D2F5FF;
-  background-color: #00395E;
-  color: #D2F5FF;
 }
 
 #partners {
@@ -574,10 +574,10 @@ input[type="email"] {
   margin-left: 31vw;
   width: 10vw;
   height: 6vh;
-  background-color: #82CEEC;
-  color: black;
+  border: 1px solid #82CEEC;
+  background-color: #04151C;
+  color: #82CEEC;
   position: absolute;
-  border: none;
   border-radius: 10px;
   font-size: 2.4vh;
   cursor: pointer;
@@ -585,9 +585,9 @@ input[type="email"] {
 }
 
 #submit:hover {
-  border: 1px solid #82CEEC;
-  background-color: #04151C;
-  color: #82CEEC;
+  background-color: #82CEEC;
+  color: black;
+  border: none;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -1112,20 +1112,20 @@ Masking
     margin-left: 31vw;
     width: 10vw;
     height: 6vh;
-    background-color: #82CEEC;
-    color: black;
     position: absolute;
-    border: none;
     border-radius: 10px;
     font-size: 2.4vh;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-  }
-
-  #submit:hover {
     border: 1px solid #82CEEC;
     background-color: #04151C;
     color: #82CEEC;
+  }
+
+  #submit:hover {
+    background-color: #82CEEC;
+    color: black;
+    border: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1706,15 +1706,13 @@ Masking
     margin-left: 72.5vw;
     width: 22vw;
     height: 6vh;
-    background-color: #82CEEC;
-    color: black;
     position: absolute;
-    border: none;
     border-radius: 10px;
     font-size: 2vh;
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
+
   #earth2 {
     height: 60vh;
     width: 150vw;
