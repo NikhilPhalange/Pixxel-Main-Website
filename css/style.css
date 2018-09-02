@@ -1015,18 +1015,19 @@ Masking
     color: white;
     font-weight: 200;
     font-weight: 4vh;
-    margin-top: 3vh;
+    margin-top: 3vw;
   }
 
   #review_detail h3 {
     margin-top: -2vh;
     color: #999999;
     font-weight: 100;
-    font-size: 3vh;
+    font-size: 2.5vw;
   }
 
   #review p {
-    font-size: 2.5vh;
+    margin-top: -2vh;
+    font-size: 2vw;
     color: whitesmoke;
     font-weight: 200;
   }
@@ -1135,7 +1136,7 @@ Masking
   }
   #project_logo {
       cursor: pointer;
-      height: 10vh;
+      height: 100%;
       width: 20vw;
       position: relative;
       top: 0;
@@ -1313,7 +1314,7 @@ Masking
   }
   #project_logo {
       cursor: pointer;
-      height: 7vh;
+      height: 100%;
       width: 35vw;
       position: relative;
       top: 0;
@@ -1588,6 +1589,7 @@ Masking
     border: none;
   }
   #review_image {
+    background-color: white;
     margin: 0.1vh 1vh -4vh;
     height: 60%;
     width: 25vw;
