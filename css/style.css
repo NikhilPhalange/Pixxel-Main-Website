@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 
 #project_logo {
     cursor: pointer;
-    height: 10vh;
+    height: 100%;
     width: 12vw;
     position: relative;
     top: 0;
