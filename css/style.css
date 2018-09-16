@@ -1185,15 +1185,7 @@ Masking
     font-size: 50px;
   }
 }
-@media only screen and (max-width: 420px) {
-  #earth {
-    bottom: -4vh;
-    left: -2.5vw;
-    height: 52vw;
-    width: 52vw;
-    transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
-}
-}
+
 @media only screen and (max-width: 600px) {
   .hero-slider {
     display: block;
@@ -1318,6 +1310,7 @@ Masking
     left: 30vw;
     margin: -80vh auto 10vh;
     overflow: visible;
+    /* display: table; */
   }
   .orbit {
       bottom: 10vh;
@@ -1326,13 +1319,26 @@ Masking
       transform: translateX(0) translateY(0);
   }
   #earth {
+    /* display: table-cell; */
       bottom: -8vh;
-      left: -2.5vw;
+    /* display: inline-block; */
+    /* position: absolute; */
+      left: -2vw;
+      /* margin: 0 auto; */
+    /* height: 100%; */
+    /* vertical-align: middle; */
       height: 52vw;
       width: 52vw;
       transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
   }
-
+  .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+} 
+.helper img {
+  vertical-align: middle;
+}
   @keyframes rotateEarth {
       0% {
           transform: rotateZ(0deg);
@@ -1658,7 +1664,7 @@ Masking
 
 }
 
-@media only and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   #social {
     background-color: transparent;
     width: 100vw;
@@ -1749,3 +1755,12 @@ Masking
   }
 
 }
+@media only screen and (max-width: 420px){
+  #earth {
+      bottom: -4vh;
+      left: -2vw;
+      height: 52vw;
+      width: 52vw;
+      transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
+  }
+  }
