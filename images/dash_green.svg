@@ -6,23 +6,23 @@
 <g>
 	<g>
 		<g>
-			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M26.857,390
-				c0-242.16,189.098-368.755,368.754-368.755"/>
-			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
-				M386.295,21.245c242.16,0,368.756,189.098,368.756,368.751"/>
+			<path fill="none" stroke="#25AA11" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M20.857,390
+				c0-242.16,189.099-368.755,368.754-368.755"/>
+			<path fill="none" stroke="#25AA11" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
+				M380.295,21.245c242.159,0,368.756,189.098,368.756,368.751"/>
 		</g>
 		<g>
-			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M754.392,380
+			<path fill="none" stroke="#25AA11" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="M748.392,380
 				c0,242.156-189.098,368.755-368.754,368.755"/>
-			<path fill="none" stroke="#F79B48" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
-				M394.954,748.755c-242.16,0-368.756-189.102-368.756-368.755"/>
+			<path fill="none" stroke="#25AA11" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="15.046,15.046" d="
+				M388.953,748.755C146.794,748.755,20.198,559.653,20.198,380"/>
 		</g>
 	</g>
 	
-		<rect x="678.004" y="161.812" transform="matrix(0.6477 0.7619 -0.7619 0.6477 376.003 -464.6552)" fill="#F79B48" width="24.878" height="24.879"/>
+		<rect x="535.986" y="43.819" transform="matrix(-0.9258 -0.3779 0.3779 -0.9258 1034.9174 315.5923)" fill="#25AA11" width="24.874" height="24.876"/>
 	
-		<rect x="14.435" y="324.812" transform="matrix(-0.3208 0.9471 -0.9471 -0.3208 354.9249 419.9849)" fill="#F79B48" width="24.88" height="24.88"/>
+		<rect x="33.351" y="506.508" transform="matrix(-0.3437 -0.9391 0.9391 -0.3437 -425.8098 740.3011)" fill="#25AA11" width="24.879" height="24.88"/>
 	
-		<rect x="612.991" y="657.788" transform="matrix(0.6477 0.7619 -0.7619 0.6477 730.9526 -240.3943)" fill="#F79B48" width="24.878" height="24.88"/>
+		<rect x="667.176" y="588.289" transform="matrix(-0.7849 -0.6197 0.6197 -0.7849 840.7831 1493.3513)" fill="#25AA11" width="24.878" height="24.879"/>
 </g>
 </svg>
