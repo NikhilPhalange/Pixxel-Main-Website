@@ -1062,7 +1062,10 @@ Masking
     margin-left: 0;
     overflow: hidden;
   }
-
+  #project_logo {
+    height: 10vh;
+    width: 25vw;
+  }
   #media {
     width: 100vw;
     height: 20vh;
@@ -1195,6 +1198,9 @@ Masking
 
 
 @media only screen and (max-width: 700px) {
+  body {
+    background-image: none;
+  }
   #end_animation {
     width: 100vw;
     height: 40vh;
@@ -1319,12 +1325,12 @@ Masking
   }
   #project_logo {
       cursor: pointer;
-      height: 8vh;
+      height: 9vh;
       width: 30vw;
       position: relative;
       top: 0;
       left: 0;
-      filter: opacity(1);
+      /* filter: opacity(1); */
       transition: 0.3s ease-in-out;
   }
   #btn {
