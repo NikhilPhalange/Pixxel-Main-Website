@@ -16,11 +16,11 @@
 <body>
    
         
-    <div id="background">
-    </div>
-    <div id="overbg">
+    <!-- <div id="background"> -->
+    <!-- </div> -->
+    <!-- <div id="overbg">
         <img src="./images/2.svg" id="overbg_img">
-    </div>
+    </div> -->
     <div id="top_nav">
       <div id="btn">
         <div id='top'></div>
@@ -49,14 +49,15 @@
             <a class="link" href="#media"><li>Contact us</li></a>
         </ul>
     </div>
+    <div class="parallax">
     <div id="intro">
         <p id="intro_text">Pixxel is a team of students from BITS Pilani that's participating in the IBM Watson AI XPRIZE competition. Our aim is to build, design and launch satellites faster than any company or government in history.</p>
     </div>
     <div id="animation">
-      <span class="helper"><img src="./images/earth.svg" alt="" class="orbit" id="earth"></span>
-      <span class="helper"><img src="./images/dash_blue.svg" alt="" class="orbit" id="orbit1"></span>
-      <span class="helper"><img src="./images/dash_orange.svg" alt="" class="orbit" id="orbit2"></span>
-      <span class="helper"><img src="./images/dash_green.svg" alt="" class="orbit" id="orbit3"></span>
+      <img src="./images/earth.svg" alt="" class="orbit" id="earth">
+      <img src="./images/dash_blue.svg" alt="" class="orbit" id="orbit1">
+      <img src="./images/dash_orange.svg" alt="" class="orbit" id="orbit2">
+      <img src="./images/dash_green.svg" alt="" class="orbit" id="orbit3">
     </div>
     <div id="mission">
         <p id="mission_heading">Our mission: </p>
@@ -144,9 +145,10 @@
       <div id="newsletter">
         <h1>Subscribe to our newsletter</h1>
         <input id="email_id" type="email" placeholder="Enter your email.">
-        <input id="submit" type="submit">Submit
+        <input id="submit" type="submit"><label>Submit
       </div>
       <img id="earth2" src="images/earth.svg">
+    </div>
     </div>
 
     
@@ -164,7 +166,7 @@
             autoplaySpeed: 3000
           });
         });
-        var smallScreen = window.matchMedia("(max-width: 550px)");
+        var smallScreen = window.matchMedia("(max-width: 600px)");
         if (smallScreen.matches){
           $(document).ready(function(){
             $('.add-carousel').slick({
