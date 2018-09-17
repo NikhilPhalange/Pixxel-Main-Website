@@ -1323,14 +1323,14 @@ Masking
       top: 0;
       left: 0vw;
       width: 100vw;
-      height: 9vh;
+      height: 15vh;
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
       z-index: 200;
   }
   #project_logo {
       cursor: pointer;
-      height: 9vh;
+      height: 15vh;
       width: 30vw;
       position: relative;
       top: 0;
@@ -1834,6 +1834,19 @@ Masking
 }
 
 @media only screen and (max-width: 420px){
+  #top_nav {
+    position: fixed;
+    top: 0;
+    left: 0vw;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 200;
+}
+#project_logo {
+  height: 8vh;
+}
   #earth {
       bottom: -4vh;
       left: -2vw;
