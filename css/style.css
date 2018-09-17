@@ -1367,6 +1367,8 @@ Masking
   .link li {
     display: inline-block;
     margin-left: 4vw;
+    position: relative;
+    top: -7px;
   }
   .item:hover {
       color: white;
