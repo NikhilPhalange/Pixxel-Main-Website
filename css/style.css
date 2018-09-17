@@ -227,17 +227,8 @@ a {
     height: 54vw;
     width: 54vw;
     transform: translateX(-50%) translateY(50%);
-    /* animation: rotateEarth 10s linear infinite; */
 }
 
-@keyframes rotateEarth {
-    0% {
-        transform:translateX(-50%) translateY(50%) rotateZ(0deg);
-    }
-    100% {
-        transform:translateX(-50%) translateY(50%) rotateZ(360deg);
-    }
-}
 #orbit1 {
     height: 60.125vw;
     width:  60.125vw;
@@ -574,6 +565,7 @@ a {
   position: absolute;
   margin-top: 10vh;
   margin-left: 0;
+  margin-bottom: 10vh;
   overflow: hidden;
 }
 
@@ -605,14 +597,6 @@ a {
 
 #media a:hover .media_icons{
   transform: scale(1.2);
-}
-
-#earth2 {
-  height: 130vh;
-  width: 170vw;
-  position: absolute;
-  right: -70vw;
-  bottom: -100vh;
 }
 
 #newsletter {
@@ -665,6 +649,44 @@ input[type="email"] {
   background-color: #82CEEC;
   color: black;
   border: none;
+}
+
+#end_animation {
+  width: 70vw;
+  height: 50vh;
+  overflow: hidden;
+  position: absolute;
+  margin-bottom: 0;
+  right: 0;
+  margin-top: 23vh;
+}
+
+#earth2 {
+  height: 130vh;
+  width: 300vw;
+  position: absolute;
+  right: -135vw;
+  bottom: -94vh;
+  overflow: hidden;
+}
+
+#end_orbit1 {
+  height: 130vh;
+  width: 300vw;
+  position: absolute;
+  right: -130vw;
+  overflow: hidden;
+  bottom: -91vh;
+  animation: end_rotate 10s linear infinite;
+}
+
+@keyframes end_rotate {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(360deg);
+  }
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -1119,11 +1141,57 @@ Masking
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
-
+  #end_animation {
+    width: 70vw;
+    height: 50vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 23vh;
+  }
+  
+  #earth2 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -135vw;
+    bottom: -92vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -130vw;
+    overflow: hidden;
+    bottom: -90vh;
+    animation: end_rotate 10s linear infinite;
+  }
 }
 
 
-
+@media only screen and (max-width: 800px) {
+  #end_animation {
+    width: 90vw;
+    height: 50vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 23vh;
+  }
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -127vw;
+    overflow: hidden;
+    bottom: -90vh;
+    animation: end_rotate 10s linear infinite;
+  }
+}
 
 
 
@@ -1325,15 +1393,7 @@ Masking
       left: -2vw;
       height: 52vw;
       width: 52vw;
-      transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
-  }
-  @keyframes rotateEarth {
-      0% {
-          transform: rotateZ(0deg);
-      }
-      100% {
-          transform: rotateZ(360deg);
-      }
+      transform: translateX(0) translateY(0);     
   }
   #orbit1 {
       height: 58.125vw;
@@ -1634,17 +1694,95 @@ Masking
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
-}
-
-@media only screen and (max-width: 550px) {
+  #end_animation {
+    width: 90vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 20vh;
+  }
+  
   #earth2 {
-    bottom: -93vh;
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -135vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -127vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 10s linear infinite;
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 550px) {
+  #end_animation {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 20vh;
+  }
+  
   #earth2 {
-    bottom: -90vh;
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -135vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -127vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 10s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #end_animation {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 20vh;
+  }
+  
+  #earth2 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -150vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -137vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 10s linear infinite;
   }
 }
 
@@ -1654,11 +1792,64 @@ Masking
       left: -2vw;
       height: 52vw;
       width: 52vw;
-      transform: translateX(0) translateY(0);      /* animation: rotateEarth 10s linear infinite; */
-  }
-  }
-@media only screen and (max-width: 380px) {
-    #earth2 {
-      bottom: -84vh;
+      transform: translateX(0) translateY(0);    
     }
+    #end_animation {
+      width: 100vw;
+      height: 40vh;
+      overflow: hidden;
+      position: absolute;
+      margin-bottom: 0;
+      right: 0;
+      margin-top: 20vh;
+    }
+    
+    #earth2 {
+      height: 130vh;
+      width: 300vw;
+      position: absolute;
+      right: -160vw;
+      bottom: -98vh;
+      overflow: hidden;
+    }
+    
+    #end_orbit1 {
+      height: 130vh;
+      width: 300vw;
+      position: absolute;
+      right: -147vw;
+      overflow: hidden;
+      bottom: -96vh;
+      animation: end_rotate 10s linear infinite;
+    }
+}
+@media only screen and (max-width: 380px) {
+  #end_animation {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 20vh;
+  }
+  
+  #earth2 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -180vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -167vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 10s linear infinite;
+  }
 }  
