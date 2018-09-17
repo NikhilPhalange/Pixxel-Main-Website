@@ -1114,7 +1114,7 @@ Masking
 
   #newsletter h1 {
     /* margin-top: -2vh; */
-    font-size: 2vh;
+    font-size: 4vh;
     color: white;
     font-weight: 400;
   }
@@ -1194,7 +1194,36 @@ Masking
 }
 
 
-
+@media only screen and (max-width: 700px) {
+  #end_animation {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 30vh;
+  }
+  
+  #earth2 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -140vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -137vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 10s linear infinite;
+  }
+} 
 
 @media only screen and (max-width: 600px) {
   .hero-slider {
