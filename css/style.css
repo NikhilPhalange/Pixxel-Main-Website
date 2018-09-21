@@ -1154,7 +1154,7 @@ Masking
   /* margin: 0 auto; */
 }
 
-.name {
+.name2 {
   text-align: center;
   color: white;
   font-weight: 200;
@@ -1164,6 +1164,7 @@ Masking
   text-align: center;
   color: white;
   font-weight: 200;
+  margin-bottom: 15px;
 }
 
 .icon2 {
