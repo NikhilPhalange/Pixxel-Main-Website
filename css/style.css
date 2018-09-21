@@ -24,6 +24,7 @@
 
 body, html {
   height: 100%;
+  margin: 0;
 }
 
 .parallax { 
@@ -263,6 +264,13 @@ a {
     }
 }
 
+#desktop {
+  display: block;
+}
+#small {
+  display: none;
+  }
+
 #mission_container {
   width: 84vw;
   margin: 5vh auto;
@@ -399,9 +407,7 @@ a {
   background-color: #00395E;
   display: flex;
   flex-direction: row;
-  align-content: space-between;
   border-radius: 4px;
-  align-content: center;
   padding: 0 2vh;
 }
 
@@ -410,32 +416,34 @@ a {
 }
 
 #team_info {
-  width: 75%;
-  margin: -2vh 4vh;
+  width: 75vw;
+  margin: -2vh auto;
   display: flex;
   flex-direction: column;
   height: 80%;
 }
 
-#team_img {
+/* #team_img {
   margin-top: 5vh;
   border-radius: 50%;
   background-color: white;
   height: 80%;
-  width: 40%;
+  width: 18vw;
   margin-left: 22vw;
   float: right;
-}
+} */
 
 #team_heading{
+  margin-top: 5vh;
   font-size: 4vw;
   color: #3C94BA;
   font-weight: 200;
 }
 
 #team p {
-  margin-top: 1vh;
-  font-size: 3vh;
+  width: 100%;
+  margin-top: -3vh;
+  font-size: 2.8vh;
   font-weight: 300;
   color: white;
 }
@@ -1071,6 +1079,9 @@ Masking
     height: 10vh;
     width: 25vw;
   }
+  #team p {
+    font-size: 2.6vh;
+  }
   #media {
     width: 100vw;
     height: 20vh;
@@ -1181,6 +1192,9 @@ Masking
 
 
 @media only screen and (max-width: 800px) {
+  #team p {
+    font-size: 2.5vh;
+  }
   #end_animation {
     width: 90vw;
     height: 50vh;
@@ -1205,6 +1219,13 @@ Masking
 @media only screen and (max-width: 700px) {
   body {
     background-image: none;
+  }
+
+  #team p {
+    font-size: 2.4vh;
+  }
+  #team_button {
+    font-size: 2.3vh;
   }
   #end_animation {
     width: 100vw;
@@ -1240,6 +1261,12 @@ Masking
   .hero-slider {
     display: block;
   }
+  #desktop {
+    display: none;
+  }
+  #small {
+    display: block;
+    }
   #animation {
     border: none;
   }
@@ -1323,14 +1350,14 @@ Masking
       top: 0;
       left: 0vw;
       width: 100vw;
-      height: 15vh;
-      background-color: rgba(0, 0, 0, 0.7);
+      height: 10vh;
+      background-color: rgba(0, 0, 0);
       color: white;
       z-index: 200;
   }
   #project_logo {
       cursor: pointer;
-      height: 15vh;
+      height: 10vh;
       width: 30vw;
       position: relative;
       top: 0;
@@ -1582,13 +1609,15 @@ Masking
   
   #team {
     height: 27vh;
+    overflow: auto;
     width: 85vw;
-    padding: 0;
+    /* padding: 0; */
     margin: 5vh auto;
   }
   #team_heading {
     font-size: 5vw;
-    margin-bottom: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
   }
   #centre_circle {
     display: none;
@@ -1598,6 +1627,7 @@ Masking
   }
   #team_info {
     width: 100%;
+    /* overflow: auto; */
   }
   #team_info p {
     font-size: 2vh;
@@ -1606,6 +1636,7 @@ Masking
     width: 30vw;
     font-size: 1.5vh;
     padding: 0.5vh;
+    margin-bottom: 2vh;
   }
   #reviews {
     height: 25vh;
@@ -1842,7 +1873,7 @@ Masking
     left: 0vw;
     width: 100vw;
     height: 8vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0);
     color: white;
     z-index: 200;
 }
