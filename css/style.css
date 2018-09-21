@@ -835,7 +835,7 @@ transition: all 250ms;
 }
 #items .item:hover {
 padding: 15px 45px;
-background-color: #82CEEC;
+background-color: #00395E;
 }
 
 #items a {
@@ -1063,7 +1063,109 @@ Masking
             transform: scaleX(1);
   }
 }
+/*------------------------------------------------- NEW TEAM PAGE----------------------------------------------- */
 
+#team_title_new {
+  width: 25vw;
+  height: 5vh;
+  margin: 15vh auto;
+  font-size: 5vw;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+.subsystem {
+  position: relative;
+  left: 0;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  width: 100vw;
+}
+
+.subsys_heading {
+  margin: 3vh 0 5vh;
+  font-weight: 400;
+  font-size: 4vw;
+  color: #00395E;
+  text-align: center;
+}
+
+.subsys_details {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.subsys_img {
+  text-decoration: none;
+  box-sizing: border-box;
+  /* width: 33.3333%; */
+   /* explanation below */
+  /* margin: 5px; */
+  /* height: 100px; */
+  /* background-color: blue; */
+  margin: 4vh auto;
+  /* align-content: center; */
+}
+
+.overlay_img {
+  position: relative;
+  margin-bottom: 5vh;
+  flex: 1 0 40%;
+  
+}
+
+.subsys_img img {
+  
+  width: 220px;
+  height: 220px;
+  
+  border-radius: 100%;
+  /* margin: 0 auto; */
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.subsys_img img:hover {
+  transform: scale(1.1);
+  /* margin: 0 auto; */
+}
+
+.name {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.desig {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.icon {
+  color: gold;
+  width: 50px;
+  height: 50px;
+  /* font-size: 40px; */
+  position: absolute;
+  /* margin-top: 0vh; */
+  transform: translateX(50%)  translateY(50%);
+  /* margin-right: 1vw; */
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.subsys_img:hover .icon {
+  opacity: 1;
+}
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
   #social {
