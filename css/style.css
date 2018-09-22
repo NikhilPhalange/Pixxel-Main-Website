@@ -1181,9 +1181,6 @@ Masking
   #top_nav {
     height: 15vh;
   }
-  #project_logo {
-    height: 15vh;
-  }
   .parallax {
     background: none;
   }
@@ -1201,7 +1198,7 @@ Masking
   }
   #project_logo {
     height: 15vh;
-    width: 25vw;
+    width: 20vw;
   }
   #team p {
     font-size: 2.6vh;
