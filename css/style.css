@@ -28,13 +28,8 @@ body, html {
 }
 
 .parallax { 
-  /* The image used */
   background-image: url("../images/2.svg");
-
-  /* Full height */
-  /* height: 100%;  */
   z-index: -3;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1104,7 +1099,7 @@ Masking
   margin: 3vh 0 5vh;
   font-weight: 400;
   font-size: 4vw;
-  color: #00395E;
+  color: #37A1DD;
   text-align: center;
 }
 
@@ -1162,7 +1157,7 @@ Masking
   text-align: center;
   color: white;
   font-weight: 200;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .icon2 {
@@ -1183,6 +1178,18 @@ Masking
 }
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
+  #top_nav {
+    height: 15vh;
+  }
+  #project_logo {
+    height: 15vh;
+  }
+  .parallax {
+    background: none;
+  }
+  .link {
+    font-size: 18px;
+  }
   #social {
     background-color: transparent;
     width: 100vw;
@@ -1193,7 +1200,7 @@ Masking
     overflow: hidden;
   }
   #project_logo {
-    height: 10vh;
+    height: 15vh;
     width: 25vw;
   }
   #team p {
@@ -1300,11 +1307,19 @@ Masking
     height: 130vh;
     width: 300vw;
     position: absolute;
-    right: -130vw;
+    right: -131vw;
     overflow: hidden;
     bottom: -90vh;
     animation: end_rotate 10s linear infinite;
   }
+  .subsys_heading {
+    margin: 3vh 0 50px;
+    font-weight: 400;
+    font-size: 35px;
+    color: #37A1DD;
+    text-align: center;
+  }
+  
 }
 
 
@@ -1325,7 +1340,7 @@ Masking
     height: 130vh;
     width: 300vw;
     position: absolute;
-    right: -127vw;
+    right: -130vw;
     overflow: hidden;
     bottom: -90vh;
     animation: end_rotate 10s linear infinite;
@@ -1337,7 +1352,7 @@ Masking
     height: 15vh;
   }
   .link {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -1376,7 +1391,7 @@ Masking
     height: 130vh;
     width: 300vw;
     position: absolute;
-    right: -132vw;
+    right: -135vw;
     overflow: hidden;
     bottom: -96vh;
     animation: end_rotate 10s linear infinite;
