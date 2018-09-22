@@ -469,7 +469,7 @@ a {
 #partners {
   width: 80vw;
   margin: 8vh 8vw;
-  min-height: 25vh;
+  height: 45vh;
   background-color: #D2F5FF;
   display: flex;
   flex-direction: column;
