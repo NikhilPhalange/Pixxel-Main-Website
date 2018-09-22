@@ -1077,7 +1077,6 @@ Masking
 /*------------------------------------------------- NEW TEAM PAGE----------------------------------------------- */
 
 #team_title_new {
-  width: 25vw;
   height: 5vh;
   margin: 15vh auto;
   font-size: 5vw;
@@ -1179,7 +1178,7 @@ Masking
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
   #team_title_new {
-    font-size: 25px;
+    font-size: 45px;
   }
   #top_nav {
     height: 15vh;
