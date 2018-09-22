@@ -657,6 +657,7 @@ input[type="email"] {
   border: 1px solid #82CEEC;
   background-color: #04151C;
   color: #82CEEC;
+  z-index: 200;
   position: absolute;
   border-radius: 4px;
   font-size: 2.4vh;
@@ -666,7 +667,7 @@ input[type="email"] {
 
 #submit:hover {
   background-color: #82CEEC;
-  color: black;
+  color: #04151C;
   border: none;
 }
 
@@ -1278,7 +1279,7 @@ Masking
     width: 22vw;
     height: 6vh;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: 2vh;
     cursor: pointer;
     transition: 0.3s ease-in-out;
