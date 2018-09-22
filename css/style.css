@@ -1178,6 +1178,9 @@ Masking
 }
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
+  #team_title_new {
+    font-size: 25px;
+  }
   #top_nav {
     height: 15vh;
   }
