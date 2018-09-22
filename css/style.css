@@ -264,12 +264,12 @@ a {
     }
 }
 
-#desktop {
+/* #desktop {
   display: block;
 }
 #small {
   display: none;
-  }
+  } */
 
 #mission_container {
   width: 84vw;
@@ -1330,6 +1330,15 @@ Masking
     bottom: -90vh;
     animation: end_rotate 10s linear infinite;
   }
+  #top_nav {
+    height: 15vh;
+  }
+  #project_logo {
+    height: 15vh;
+  }
+  .link {
+    font-size: 13px;
+  }
 }
 
 
@@ -1372,15 +1381,6 @@ Masking
     bottom: -96vh;
     animation: end_rotate 10s linear infinite;
   }
-  #top_nav {
-    height: 15vh;
-  }
-  #project_logo {
-    height: 15vh;
-  }
-  .link {
-    font-size: 13px;
-  }
 } 
 
 @media only screen and (max-width: 600px) {
@@ -1390,12 +1390,12 @@ Masking
   .hero-slider {
     display: block;
   }
-  #desktop {
+  /* #desktop {
     display: none;
   }
   #small {
     display: block;
-    }
+    } */
   #animation {
     border: none;
   }
@@ -1403,8 +1403,8 @@ Masking
       position: relative;
       text-align: center;
       height: 30vh;
-      top: 70vh;
-      width: 75vw;
+      top: 64vh;
+      width: 90vw;
      margin: 0 auto; 
   }
   #intro_text {
@@ -1488,7 +1488,7 @@ Masking
   #project_logo {
       cursor: pointer;
       height: 10vh;
-      width: 30vw;
+      width: 35vw;
       position: relative;
       top: 0;
       left: 0;
@@ -1694,7 +1694,7 @@ Masking
   #making_container p {
     font-size: 2.2vh;
   }
-  #making_container h1 {
+  #making_container > h1 {
     margin-top: 0vh;
     font-size: 5vw;
   }
@@ -1703,14 +1703,16 @@ Masking
     font-family: 'Roboto Slab', serif;
     color: black;
   }
-  
-  #left h1 {
+  #centre_circle {
+    display: none;
+  }
+  #left > h1 {
     margin-left: 2vw;
     text-align: center;
     font-size: 2.7vh;
   }
   
-  #right h1 {
+  #right > h1 {
     margin-right: 2vw;
     text-align: center;
     font-size: 2.7vh;
@@ -1749,9 +1751,7 @@ Masking
     margin-top: 2vh;
     margin-bottom: 3vh;
   }
-  #centre_circle {
-    display: none;
-  }
+  
   #team_img {
     display: none;
   }
