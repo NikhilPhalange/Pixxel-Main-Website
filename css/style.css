@@ -469,7 +469,7 @@ a {
 #partners {
   width: 80vw;
   margin: 8vh 8vw;
-  min-height: 50vh;
+  min-height: 25vh;
   background-color: #D2F5FF;
   display: flex;
   flex-direction: column;
@@ -1143,7 +1143,6 @@ Masking
   height: 220px;
   
   border-radius: 100%;
-  /* margin: 0 auto; */
   transform: scale(1);
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -1151,7 +1150,6 @@ Masking
 
 .subsys_img img:hover {
   transform: scale(1.1);
-  /* margin: 0 auto; */
 }
 
 .name2 {
@@ -1373,6 +1371,15 @@ Masking
     overflow: hidden;
     bottom: -96vh;
     animation: end_rotate 10s linear infinite;
+  }
+  #top_nav {
+    height: 15vh;
+  }
+  #project_logo {
+    height: 15vh;
+  }
+  .link {
+    font-size: 13px;
   }
 } 
 
