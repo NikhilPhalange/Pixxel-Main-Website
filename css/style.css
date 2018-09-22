@@ -620,7 +620,7 @@ a {
 
 #newsletter {
   position: absolute;
-  margin-top: 0vh;
+  margin-top: 2vh;
   right: 15vw;
   height: 30vh;
   border-left: 2px solid white;
@@ -1244,7 +1244,7 @@ Masking
 
   #newsletter {
     position: absolute;
-    margin-top: -6vh;
+    margin: 2vh 0 2vh;
     left: 0;
     height: 30vh;
     width: 100vw;
@@ -1288,7 +1288,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 35vh;
   }
   
   #earth2 {
@@ -1331,7 +1331,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 40vh;
   }
   #end_orbit1 {
     height: 130vh;
@@ -1349,12 +1349,15 @@ Masking
     height: 12vh;
   }
   .link {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 
 @media only screen and (max-width: 700px) {
+  .link {
+    font-size: 15px;
+  }
   body {
     background-image: none;
   }
@@ -1372,7 +1375,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 43vh;
   }
   
   #earth2 {
@@ -1524,7 +1527,7 @@ Masking
       height: 10vh;
       position: absolute;
       top: 0;
-      font-size: 2.5vh;
+      font-size: 16px;
       display: inline-grid;
       vertical-align: middle;
       position: relative;
@@ -1879,7 +1882,7 @@ Masking
 
   #newsletter {
     position: absolute;
-    margin-top: -3vh;
+    margin-top: 3vh;
     left: 0;
     height: 30vh;
     width: 100vw;
@@ -1923,7 +1926,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 42vh;
   }
   
   #earth2 {
@@ -1954,7 +1957,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 35vh;
   }
   
   #earth2 {
@@ -1985,7 +1988,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 30vh;
+    margin-top: 35vh;
   }
   
   #earth2 {
@@ -2036,7 +2039,7 @@ Masking
       position: absolute;
       margin-bottom: 0;
       right: 0;
-      margin-top: 33vh;
+      margin-top: 35vh;
     }
     
     #earth2 {
@@ -2066,7 +2069,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 33vh;
+    margin-top: 35vh;
   }
   
   #earth2 {
