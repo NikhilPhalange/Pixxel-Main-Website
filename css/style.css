@@ -94,28 +94,43 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     width: 100vw;
     height: 10vh;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     z-index: 200;
 }
 
+#title {
+  font-size: 3vw;
+  float: left;
+  left: 1vh;
+  position: absolute;
+  top: 1vh;
+}
+
+#title:hover:before {
+  transform: scaleX(1);
+}
+
 #logo {
-    float: left;
+  display: flex;
+  position: absolute;
+  height: 10vh;
+  left: 0;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
 }
 
 #project_logo {
-    cursor: pointer;
-    height: 10vh;
-    width: 12vw;
-    position: relative;
-    top: 0;
-    left: 1vw;
-    /* filter: opacity(0.5); */
-    transition: 0.3s ease-in-out;
+  font-size: 2vw;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-#project_logo:hover {
-    /* filter: opacity(1); */
+#project_logo > p {
+  margin: 0;
 }
 
 #top_nav_list {
@@ -133,7 +148,6 @@ a {
 .link {
     padding: 0 1vw;
     height: 100%;
-    position: absolute;
     top: 0;
     font-size: 2.5vh;
     font-weight: 300;
@@ -398,12 +412,12 @@ a {
   z-index: 100;
   width: 80vw;
   margin: 8vh 8vw;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #00395E;
   display: flex;
   flex-direction: row;
   border-radius: 4px;
-  padding: 0 2vh;
+  padding: 2vh 2vh;
 }
 
 #team_container {
@@ -429,11 +443,11 @@ a {
 } */
 
 #team_heading{
-  margin-top: 5vh;
+  margin-top: 3vh;
   font-size: 4vw;
   color: #3C94BA;
   font-weight: 200;
-}
+} 
 
 #team p {
   width: 100%;
@@ -697,7 +711,7 @@ input[type="email"] {
   right: -130vw;
   overflow: hidden;
   bottom: -92vh;
-  animation: end_rotate 10s linear infinite;
+  animation: end_rotate 20s linear infinite;
 }
 
 @keyframes end_rotate {
@@ -1199,9 +1213,21 @@ Masking
     margin-left: 0;
     overflow: hidden;
   }
-  #project_logo {
+  #logo {
+    display: flex;
+    position: absolute;
     height: 15vh;
-    width: 20vw;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #project_logo {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    padding: 0;
   }
   #team p {
     font-size: 2.6vh;
@@ -1310,7 +1336,7 @@ Masking
     right: -130vw;
     overflow: hidden;
     bottom: -90vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
   .subsys_heading {
     margin: 3vh 0 50px;
@@ -1343,12 +1369,12 @@ Masking
     right: -130vw;
     overflow: hidden;
     bottom: -90vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
   #top_nav {
     height: 12vh;
   }
-  #project_logo {
+  #logo {
     height: 12vh;
   }
   .link {
@@ -1397,7 +1423,7 @@ Masking
     right: -135vw;
     overflow: hidden;
     bottom: -96vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
 } 
 
@@ -1408,12 +1434,6 @@ Masking
   .hero-slider {
     display: block;
   }
-  /* #desktop {
-    display: none;
-  }
-  #small {
-    display: block;
-    } */
   #animation {
     border: none;
   }
@@ -1503,15 +1523,8 @@ Masking
       color: white;
       z-index: 200;
   }
-  #project_logo {
-      cursor: pointer;
+  #logo {
       height: 10vh;
-      width: 35vw;
-      position: relative;
-      top: 0;
-      left: 0;
-      /* filter: opacity(1); */
-      transition: 0.3s ease-in-out;
   }
   #btn {
     display: block;
@@ -1758,15 +1771,15 @@ Masking
   }
   
   #team {
-    height: 27vh;
-    overflow: auto;
+    min-height: 27vh;
+    /* overflow: auto; */
     width: 85vw;
     /* padding: 0; */
     margin: 5vh auto;
   }
   #team_heading {
     font-size: 5vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 3vh;
   }
   
@@ -1948,7 +1961,7 @@ Masking
     right: -127vw;
     overflow: hidden;
     bottom: -96vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
 }
 
@@ -1979,7 +1992,7 @@ Masking
     right: -127vw;
     overflow: hidden;
     bottom: -96vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
 }
 
@@ -2010,7 +2023,7 @@ Masking
     right: -137vw;
     overflow: hidden;
     bottom: -96vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
 }
 
@@ -2024,45 +2037,45 @@ Masking
     background-color: rgba(0, 0, 0);
     color: white;
     z-index: 200;
-}
-#project_logo {
-  height: 8vh;
-}
+  }
+  #logo {
+    height: 8vh;
+  }
   #earth {
       bottom: -4vh;
       left: -2vw;
       height: 52vw;
       width: 52vw;
       transform: translateX(0) translateY(0);    
-    }
-    #end_animation {
-      width: 100vw;
-      height: 40vh;
-      overflow: hidden;
-      position: absolute;
-      margin-bottom: 0;
-      right: 0;
-      margin-top: 35vh;
-    }
+  }
+  #end_animation {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 35vh;
+  }
     
-    #earth2 {
-      height: 130vh;
-      width: 300vw;
-      position: absolute;
-      right: -160vw;
-      bottom: -98vh;
-      overflow: hidden;
-    }
-    
-    #end_orbit1 {
-      height: 130vh;
-      width: 300vw;
-      position: absolute;
-      right: -147vw;
-      overflow: hidden;
-      bottom: -96vh;
-      animation: end_rotate 10s linear infinite;
-    }
+  #earth2 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -160vw;
+    bottom: -98vh;
+    overflow: hidden;
+  }
+  
+  #end_orbit1 {
+    height: 130vh;
+    width: 300vw;
+    position: absolute;
+    right: -147vw;
+    overflow: hidden;
+    bottom: -96vh;
+    animation: end_rotate 20s linear infinite;
+  }
 }
 @media only screen and (max-width: 380px) {
   #end_animation {
@@ -2091,6 +2104,6 @@ Masking
     right: -167vw;
     overflow: hidden;
     bottom: -96vh;
-    animation: end_rotate 10s linear infinite;
+    animation: end_rotate 20s linear infinite;
   }
 }  
