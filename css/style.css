@@ -273,16 +273,16 @@ a {
     }
 }
 
-/* #desktop {
+#desktop {
   display: block;
 }
-#small {
+#mobile {
   display: none;
-  } */
+  }
 
 #mission_container {
   width: 84vw;
-  margin: 5vh auto;
+  margin: 7vh auto;
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -292,9 +292,10 @@ a {
 #mission_heading {
   color: #37A1DD;
   margin-left: 8vw;
-  font-size: 4vw;
+  font-size: 3.7vw;
   font-weight: 100;
-  margin-top: 87vh;
+  margin-top: 90vh;
+  margin-bottom: 2vh;
 }
 
 .box {
@@ -303,7 +304,7 @@ a {
   border-radius: 4px;
   background-color: white;
   width: 30%;
-  height: 45vh;
+  min-height: 40vh;
   padding: 1vh;
   display: flex;
   text-align: center;
@@ -336,28 +337,31 @@ a {
 #making_heading {
   color: #37A1DD;
   margin-left: 8vw;
-  font-size: 4vw;
+  font-size: 3.7vw;
   font-weight: 100;
-  margin-top: 7vh;
+  margin-top: 14vh;
+  margin-bottom: 2vh;
 }
 
 #making_container {
   width: 80vw;
   margin: 0 9.5vw;
-  height: 50vh;
+  min-height: 30vh;
   background-color: #D2F5FF;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   align-content: center;
-  /* padding: 3vh; */
+  padding: 10px;
 }
 
 #centre_circle {
   /* margin: 3vh; */
+  visibility: visible;
   flex-direction: column;
-  height: 100%;
-  width: 120%;
+  /* height: 100%; */
+  width: 280px;
+  height: 240px;
   background-color: white;
   border-radius: 50%;
   display: block;
@@ -380,6 +384,12 @@ a {
   font-size: 2.7vw;
 }
 
+#right2 h1 {
+  margin-right: 2vw;
+  text-align: right;
+  font-size: 2.7vw;
+}
+
 #making_container h2 {
   text-align: center;
   /* margin-left: 2vw; */
@@ -387,6 +397,17 @@ a {
 }
 
 #right p {
+  margin: 2vw 7vw;
+  text-align: right;
+  width: 80%;
+  padding: 5px;
+  flex-direction: column;
+  font-weight: 400;
+  color: black;
+  font-size: 3vh;
+}
+
+#right2 p {
   margin: 2vw 4vw;
   text-align: right;
   width: 80%;
@@ -447,12 +468,13 @@ a {
   font-size: 4vw;
   color: #3C94BA;
   font-weight: 200;
+  margin-bottom: 30px;
 } 
 
 #team p {
   width: 100%;
   margin-top: -3vh;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 300;
   color: white;
 }
@@ -588,11 +610,11 @@ a {
   align-content: space-between;
   border-radius: 4px;
   align-content: center;
-  padding: 2vh;
+  padding: 1vh;
 }
 
 #featured_in h1 {
-  margin-top: -1vh;
+  margin-top: 0vh;
   font-size: 3vw;
   color: #465258;
   font-weight: 300;
@@ -669,7 +691,7 @@ input[type="email"] {
   cursor: text;
   padding-left: 10px;
   position: absolute;
-  z-index: 200;
+  z-index: 20;
 }
 
 #submit {
@@ -679,7 +701,7 @@ input[type="email"] {
   border: 1px solid #82CEEC;
   background-color: #04151C;
   color: #82CEEC;
-  z-index: 200;
+  z-index: 100;
   position: absolute;
   border-radius: 4px;
   font-size: 2.4vh;
@@ -1199,6 +1221,12 @@ Masking
 }
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
+  #centre_circle {
+    display: none;
+  }
+  #right p {
+    margin: 2vw 7vw;
+  }
   .partners_logo img {
     width: 100%;
     border-radius: 5px;
@@ -1584,7 +1612,9 @@ Masking
     font-size: 5vh;
   }
   #making_heading {
+    margin-top: 7vh;
     font-size: 5vh;
+    margin-bottom: 2vh;
   }
   .member {
     width: 30vw;
@@ -1597,7 +1627,7 @@ Masking
     font-size: 2.5vh;
   }
   .box {
-    height: 13vh;
+    min-height: 13vh;
     width: 80%;
     margin:0 auto;
     border-radius: 15px;
@@ -1608,6 +1638,13 @@ Masking
   .box p, #making_container p, #partners p {
     font-size: 1.5vh;
   }
+
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: block;
+    }
 
   #centre_circle {
     visibility: hidden;
@@ -1776,9 +1813,7 @@ Masking
   #mission_heading {
     font-size: 4vh;
   }
-  #making_heading {
-    font-size: 4vh;
-  }
+ 
   #team_title h1 {
     font-size: 40px;
   }
@@ -1798,6 +1833,9 @@ Masking
   #mission_container .box {
     height: 27vh;
     border-radius: 3px;
+  }
+  #mission_container {
+    margin: 2vh auto;
   }
   .box {
     width: 80%;
@@ -1844,9 +1882,10 @@ Masking
   }
 
   #making_container {
-    height: 25vh;
+    min-height: 20vh;
     width: 85vw;
     margin: 0 auto;
+    padding: 0;
   }
   #making_container p {
     font-size: 2.2vh;
@@ -1904,9 +1943,9 @@ Masking
     margin: 5vh auto;
   }
   #team_heading {
-    font-size: 23px;
+    font-size: 28px;
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 20px;
   }
   #reviews {
     width: 85vw;
@@ -1926,14 +1965,16 @@ Masking
     width: 100%;
   }
   .partners_logo img {
-    height: 180px;
+    height: 130px;
   }
   #featured_in {
     min-height: 25vh;
     width: 85vw;
     margin: 5vh auto;
+    padding: 1vh;
   }
   #featured_in h1 {
+    margin-top: 0vh;
     font-size: 3vh;
   }
   #social {
