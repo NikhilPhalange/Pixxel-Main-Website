@@ -112,17 +112,29 @@
     </div>
     <div id="partners">
       <h1 id="partners_heading">Our Partners</h1>
-      <!-- <div class="partners_details">
-        <div class="partners_logo">
-          <img src="images/invest_india.png" alt="" width="300" height="200"> 
-        </div>
-       <div class="partners_logo">
-              <img src="images/isro-logo.jpg" alt="" width="300" height="200"> 
-        </div>
-        <div class="partners_logo">
-            <img src="images/workbench.jpg" alt="" width="300" height="200"> 
+      <div class="partners_details add-carousel-2">
+          <div class="partners_logo">
+            <img src="images/isro.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+              <img src="images/mmi.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+            <img src="images/TRA.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+            <img src="images/wp.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+            <img src="images/Invest-India.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+            <img src="images/Miracle.png" alt=""> 
+          </div>
+          <!-- <div class="partners_logo">
+            <img src="images/BITS.png" alt=""> 
+          </div> -->
       </div>
-      </div> -->
     </div>
     <div id="reviews">
       <div id="review">
@@ -152,6 +164,17 @@
     </div>
     <div id="featured_in">
       <h1>Featured in:</h1>
+      <div class="partners_details add-carousel-2">
+          <div class="partners_logo">
+            <img src="images/indian-express.jpg" alt=""> 
+          </div>
+          <div class="partners_logo">
+              <img src="images/indiatimes.png" alt=""> 
+          </div>
+          <div class="partners_logo">
+            <img src="images/DNA.png" alt=""> 
+          </div>
+      </div>
     </div>
     <div id="social">
       <div id="media">
@@ -216,6 +239,42 @@
             document.getElementsByClassName('desktop')[0].style.display = 'block';
             document.getElementsByClassName('mobile')[0].style.display = 'none';
             $('.add-carousel').slick('unslick');
+          }
+        });
+
+        var smallScreen = window.matchMedia("(max-width: 1000px)");
+        if (smallScreen.matches){
+          document.getElementsByClassName('desktop')[0].style.display = 'none';
+          document.getElementsByClassName('mobile')[0].style.display = 'block';
+          $(document).ready(function(){
+            $('.add-carousel-2').slick({
+              autoplay: true,
+              autoplaySpeed: 3000,
+              infinite: false
+            });
+          });
+        }
+        else {
+          document.getElementsByClassName('desktop')[0].style.display = 'block';
+          document.getElementsByClassName('mobile')[0].style.display = 'none';
+        }
+        $(window).resize(function() {
+          var smallScreen = window.matchMedia("(max-width: 1000px)");
+          if (smallScreen.matches){
+            document.getElementsByClassName('desktop')[0].style.display = 'none';
+            document.getElementsByClassName('mobile')[0].style.display = 'block';
+            $(document).ready(function(){
+              $('.add-carousel-2').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                infinite: false
+              });
+            });
+          }
+          else {
+            document.getElementsByClassName('desktop')[0].style.display = 'block';
+            document.getElementsByClassName('mobile')[0].style.display = 'none';
+            $('.add-carousel-2').slick('unslick');
           }
         });
         // var scene = document.getElementById('scene');

@@ -479,14 +479,14 @@ a {
 #partners {
   width: 80vw;
   margin: 8vh 9.5vw;
-  height: 45vh;
+  min-height: 20vh;
   background-color: #D2F5FF;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
   border-radius: 4px;
-  align-content: center;
-  padding: 2vh;
+  padding: 20px;
 }
 
 #partners_heading {
@@ -499,17 +499,24 @@ a {
 .partners_details {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 97%;
   margin: 0 auto;
 }
 
 .partners_logo {
+  float: left;
+  position: relative;
   margin: 0 20px;
+  flex: 1 0 40%;
+  width: 50%;
 }
 
 .partners_logo img {
+  width: 100%;
   border-radius: 5px;
+  height: 300px;
 }
 
 #reviews {
@@ -575,9 +582,9 @@ a {
   background-color: #FFFFFF;
   width: 80vw;
   margin: 5vh 9.5vw;
-  height: 40vh;
+  min-height: 30vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: space-between;
   border-radius: 4px;
   align-content: center;
@@ -1151,7 +1158,6 @@ Masking
   
   width: 220px;
   height: 220px;
-  
   border-radius: 100%;
   transform: scale(1);
   transition: 0.2s ease-in-out;
@@ -1193,6 +1199,11 @@ Masking
 }
 /* -------------------------------------------------MEDIA QUERIES---------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
+  .partners_logo img {
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+  }
   #team_title_new {
     font-size: 45px;
   }
@@ -1275,6 +1286,10 @@ Masking
   #review_detail p {
     font-size: 20px;
   }
+
+  /* .partners_detail {
+    flex-direction:
+  } */
 
   #earth2 {
     height: 130vh;
@@ -1898,7 +1913,7 @@ Masking
     margin: 0 auto;
   }
   #partners {
-    height: 25vh;
+    min-height: 25vh;
     width: 85vw;
     padding: 1vh;
     margin: 5vh auto;
@@ -1907,8 +1922,14 @@ Masking
     margin-top: 0;
     font-size: 5vw;
   }
+  .partners_details {
+    width: 100%;
+  }
+  .partners_logo img {
+    height: 180px;
+  }
   #featured_in {
-    height: 25vh;
+    min-height: 25vh;
     width: 85vw;
     margin: 5vh auto;
   }
