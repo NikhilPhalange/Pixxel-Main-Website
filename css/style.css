@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   position: absolute;
   height: 10vh;
-  left: 0;
+  left: 1vw;
   top: 0;
   flex-direction: row;
   align-items: center;
@@ -343,7 +343,7 @@ a {
 
 #making_container {
   width: 80vw;
-  margin: 0 8vw;
+  margin: 0 9.5vw;
   height: 50vh;
   background-color: #D2F5FF;
   border-radius: 4px;
@@ -411,7 +411,7 @@ a {
   opacity: 1;
   z-index: 100;
   width: 80vw;
-  margin: 8vh 8vw;
+  margin: 8vh 9.5vw;
   min-height: 50vh;
   background-color: #00395E;
   display: flex;
@@ -452,7 +452,7 @@ a {
 #team p {
   width: 100%;
   margin-top: -3vh;
-  font-size: 2.8vh;
+  font-size: 17px;
   font-weight: 300;
   color: white;
 }
@@ -467,6 +467,7 @@ a {
   font-size: 3vh;
   border-radius: 4px;
   transition: 0.2s ease-in-out;
+  margin-bottom: 15px;
 }
 
 #team_button:hover {
@@ -477,7 +478,7 @@ a {
 
 #partners {
   width: 80vw;
-  margin: 8vh 8vw;
+  margin: 8vh 9.5vw;
   height: 45vh;
   background-color: #D2F5FF;
   display: flex;
@@ -514,58 +515,57 @@ a {
 #reviews {
   background-color: #00395E;
   width: 80vw;
-  margin: 5vh 8vw;
-  height: 45vh;
+  margin: 5vh 9.5vw;
+  min-height: 30vh;
   display: flex;
   flex-direction: row;
-  align-content: space-between;
   border-radius: 4px;
-  align-content: center;
-  padding: 2vh;
+  align-items: center;
+  padding: 30px;
 }
 
 #review {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  height: 80%;
-  margin: 2vh auto;
+  width: 95%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
 #review_image {
   border-radius: 50%;
   background-color: white;
-  width: 25%;
-  height: 100%;
-  margin: 1vh -6vh;
+  width: 65%;
+  height: 230px;
 }
 
 #review_detail {
   display: flex;
   flex-direction: column;
+  align-content: center;
   width: 80%;
-  height: 100%;
-  padding: 0.4vh;
-  margin: -6vh 12vh;
+  height: 90%;
+  margin: 0;
 }
 
 #review_detail h2 {
   color: white;
   font-weight: 200;
   font-size: 3vw;
-  margin-top: 3vw;
+  margin: 0 10px 10px;
 }
 
 #review_detail h3 {
-  margin-top: -2vh;
+  margin: 10px;
   color: #999999;
   font-weight: 100;
   font-size: 2.5vw;
 }
 
 #review p {
-  margin-top: -2vh;
+  margin: 10px;
   font-size: 1.7vw;
   color: whitesmoke;
   font-weight: 200;
@@ -574,7 +574,7 @@ a {
 #featured_in  {
   background-color: #FFFFFF;
   width: 80vw;
-  margin: 5vh 8vw;
+  margin: 5vh 9.5vw;
   height: 40vh;
   display: flex;
   flex-direction: row;
@@ -661,7 +661,8 @@ input[type="email"] {
   height: 6vh;
   cursor: text;
   padding-left: 10px;
-  position: absolute;;
+  position: absolute;
+  z-index: 200;
 }
 
 #submit {
@@ -743,7 +744,7 @@ input[type="email"] {
   font-size: 4vw;
 }
 
-#team_container {
+/* #team_container {
   top: 30vh;
   position: relative;
   display: flex;
@@ -751,7 +752,7 @@ input[type="email"] {
   justify-content: space-between;
   width: 80vw;
   margin: 0 10vw;
-}
+} */
 
 
 .member {
@@ -1217,7 +1218,7 @@ Masking
     display: flex;
     position: absolute;
     height: 15vh;
-    left: 0;
+    left: 2vw;
     top: 0;
     flex-direction: row;
     align-items: center;
@@ -1230,7 +1231,7 @@ Masking
     padding: 0;
   }
   #team p {
-    font-size: 2.6vh;
+    font-size: 16px;
   }
   #media {
     width: 100vw;
@@ -1261,6 +1262,18 @@ Masking
 
   #media a:hover .media_icons{
     transform: scale(1.2);
+  }
+
+  #review_detail h2 {
+    font-size: 35px;
+  }
+
+  #review_detail h3 {
+    font-size: 27px; 
+  }
+
+  #review_detail p {
+    font-size: 20px;
   }
 
   #earth2 {
@@ -1348,10 +1361,43 @@ Masking
   
 }
 
+@media only screen and (max-width: 870px) {
+  #review_detail h2 {
+    font-size: 33px;
+  }
+
+  #review_detail h3 {
+    font-size: 25px; 
+  }
+
+  #review_detail p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  #review_image {
+    width: 80%;
+  }
+  #review_detail {
+    width: 100%;
+  }
+  #review_detail h2 {
+    font-size: 4vw;
+  }
+
+  #review_detail h3 {
+    font-size: 3vw; 
+  }
+
+  #review_detail p {
+    font-size: 2.5vw;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   #team p {
-    font-size: 2.5vh;
+    font-size: 16px;
   }
   #end_animation {
     width: 90vw;
@@ -1382,6 +1428,26 @@ Masking
   }
 }
 
+@media only screen and (max-width: 730px) {
+  #review_image {
+    width: 80%;
+  }
+  #review_detail {
+    width: 100%;
+  }
+  #review_detail h2 {
+    font-size: 3.5vw;
+  }
+
+  #review_detail h3 {
+    font-size: 3vw; 
+  }
+
+  #review_detail p {
+    font-size: 2.8vw;
+  }
+}
+
 
 @media only screen and (max-width: 700px) {
   .link {
@@ -1392,7 +1458,7 @@ Masking
   }
 
   #team p {
-    font-size: 2.4vh;
+    font-size: 16px;
   }
   #team_button {
     font-size: 2.3vh;
@@ -1425,7 +1491,50 @@ Masking
     bottom: -96vh;
     animation: end_rotate 20s linear infinite;
   }
+  #reviews {
+    padding: 13px;
+  }
 } 
+
+@media only screen and (max-width: 675px) {
+  #review_image {
+    width: 80%;
+  }
+  #review_detail {
+    width: 100%;
+  }
+  #review_detail h2 {
+    font-size: 3.5vw;
+  }
+
+  #review_detail h3 {
+    font-size: 2.9vw; 
+  }
+
+  #review_detail p {
+    font-size: 2.8vw;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  #review_image {
+    width: 75%;
+  }
+  #review_detail {
+    width: 100%;
+  }
+  #review_detail h2 {
+    font-size: 3.3vw;
+  }
+
+  #review_detail h3 {
+    font-size: 2.9vw; 
+  }
+
+  #review_detail p {
+    font-size: 2.8vw;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .parallax {
@@ -1484,9 +1593,7 @@ Masking
   .box p, #making_container p, #partners p {
     font-size: 1.5vh;
   }
-  #team_info p {
-    font-size: 2vh;
-  }
+
   #centre_circle {
     visibility: hidden;
   }
@@ -1497,22 +1604,26 @@ Masking
   }
   #team_info {
     margin-top: -1vh;
-    width: 40%;
+    width: 100%;
   }
 
   #review {
     width: 90vw;
     border: none;
   }
+  #review_image {
+    width: 80%;
+    height: 200px;
+  }
   #team_info p {
-    font-size: 2vh;
+    font-size: 16px;
   }
   #team_title h1 {
     font-size: 50px;
   }
-  #team_container {
+  /* #team_container {
     display: none;
-  }
+  } */
   #top_nav {
       position: fixed;
       top: 0;
@@ -1778,56 +1889,13 @@ Masking
     margin: 5vh auto;
   }
   #team_heading {
-    font-size: 5vw;
+    font-size: 23px;
     margin-top: 1vh;
     margin-bottom: 3vh;
   }
-  
-  #team_img {
-    display: none;
-  }
-  #team_info {
-    width: 100%;
-    /* overflow: auto; */
-  }
-  #team_info p {
-    font-size: 2vh;
-  }
-  #team_button {
-    width: 30vw;
-    font-size: 1.5vh;
-    padding: 0.5vh;
-    margin-bottom: 2vh;
-  }
   #reviews {
-    height: 25vh;
     width: 85vw;
-    margin: 5vh auto;
-  }
-  #review {
-    padding: 1vh;
-    height: 25vh;
-    border: none;
-  }
-  #review_image {
-    background-color: white;
-    margin: 0.1vh 3vw -4vh;
-    height: 60%;
-    width: 20vw;
-  }
-  #review_detail {
-    margin: -3vh 4vh -4vh;
-    width: 50vw;
-  }
-  #review_detail p {
-    margin-top: -2vh;
-    font-size: 1.8vh;
-  }
-  #review_detail h2{
-    font-size: 2.4vh;
-  }
-  #review_detail h3 {
-    font-size: 2vh;
+    margin: 0 auto;
   }
   #partners {
     height: 25vh;
@@ -1966,6 +2034,29 @@ Masking
 }
 
 @media only screen and (max-width: 550px) {
+  #reviews {
+    padding: 10px;
+  }
+
+  #review_image {
+    width: 80%;
+    height: 180px;
+  }
+  #review_detail h2 {
+    font-size: 3.5vw;
+    margin:0 0 5px;
+  }
+
+  #review_detail h3 {
+    font-size: 2.9vw; 
+    margin: 4px;
+  }
+
+  #review_detail p {
+    font-size: 2.8vw;
+    margin: 4px;
+  }
+
   #end_animation {
     width: 100vw;
     height: 40vh;
@@ -1997,6 +2088,30 @@ Masking
 }
 
 @media only screen and (max-width: 500px) {
+  #reviews {
+    padding: 8px;
+  }
+
+  #review_image {
+    width: 80%;
+    height: 160px;
+  }
+
+  #review_detail h2 {
+    font-size: 3.8vw;
+    margin:0 0 3px;
+  }
+
+  #review_detail h3 {
+    font-size: 3.3vw; 
+    margin: 2px;
+  }
+
+  #review_detail p {
+    font-size: 3vw;
+    margin: 2px;
+  }
+
   #end_animation {
     width: 100vw;
     height: 40vh;
@@ -2027,7 +2142,45 @@ Masking
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #reviews {
+    padding: 8px;
+  }
+
+  #review_image {
+    width: 80%;
+    height: 160px;
+  }
+
+  #review_detail h2 {
+    font-size: 4vw;
+    margin:0 0 3px;
+  }
+
+  #review_detail h3 {
+    font-size: 3.5vw; 
+    margin: 2px;
+  }
+
+  #review_detail p {
+    font-size: 3.2vw;
+    margin: 2px;
+  }
+}
+
 @media only screen and (max-width: 420px){
+  #team_button {
+    width: 35vw;
+    padding: 2vh;
+    border: 1px solid #D2F5FF;
+    background-color: #00395E;
+    color: #D2F5FF;
+    text-align: center;
+    font-size: 3vh;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 15px;
+  }
   #top_nav {
     position: fixed;
     top: 0;
@@ -2076,8 +2229,106 @@ Masking
     bottom: -96vh;
     animation: end_rotate 20s linear infinite;
   }
+  #reviews {
+    padding: 6px;
+  }
+
+  #review_detail {
+    margin-left: -15px;
+  }
+
+  #review_image {
+    width: 70%;
+    height: 160px;
+  }
+
+  #review_detail h2 {
+    font-size: 4.2vw;
+    margin:0 0 3px;
+  }
+
+  #review_detail h3 {
+    font-size: 3.6vw; 
+    margin: 2px;
+  }
+
+  #review_detail p {
+    font-size: 3.4vw;
+    margin: 2px;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  #team_button {
+    width: 45vw;
+    padding: 2vh;
+    border: 1px solid #D2F5FF;
+    background-color: #00395E;
+    color: #D2F5FF;
+    text-align: center;
+    font-size: 3vh;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 15px;
+  }
+  #reviews {
+    padding: 6px;
+  }
+
+  #review_detail {
+    margin-left: -25px;
+  }
+
+  #review_image {
+    width: 70%;
+    height: 160px;
+  }
+
+  #review_detail h2 {
+    font-size: 4.8vw;
+    margin:0 0 3px;
+  }
+
+  #review_detail h3 {
+    font-size: 3.9vw; 
+    margin: 2px;
+  }
+
+  #review_detail p {
+    font-size: 3.6vw;
+    margin: 2px;
+  }
+ 
+}  
+
 @media only screen and (max-width: 380px) {
+  #reviews {
+    padding: 6px;
+  }
+
+  #review_detail {
+    margin-left: -35px;
+  }
+
+  #review_image {
+    width: 70%;
+    height: 160px;
+  }
+
+  #review_detail h2 {
+    font-size: 5vw;
+    margin:0 0 3px;
+  }
+
+  #review_detail h3 {
+    font-size: 4.1vw; 
+    margin: 2px;
+  }
+
+  #review_detail p {
+    font-size: 3.9vw;
+    margin: 2px;
+  }
   #end_animation {
     width: 100vw;
     height: 40vh;
