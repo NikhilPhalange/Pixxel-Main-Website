@@ -360,8 +360,8 @@ a {
   visibility: visible;
   flex-direction: column;
   /* height: 100%; */
-  width: 280px;
-  height: 240px;
+  width: 270px;
+  height: 250px;
   background-color: white;
   border-radius: 50%;
   display: block;
@@ -623,19 +623,19 @@ a {
 #social {
   background-color: transparent;
   width: 100vw;
-  height: 45vh;
+  min-height: 40vh;
   position: absolute;
   margin-top: 10vh;
   margin-left: 0;
   margin-bottom: 10vh;
-  overflow: hidden;
+  overflow: visible;
 }
 
 #media {
   width: 30vw;
   height: 30vh;
   position: absolute;
-  margin-top: -2vh;
+  margin-top: 3vh;
   margin-left: 4vw;
   text-align: center;
 }
@@ -647,11 +647,11 @@ a {
 }
 
 .media_icons {
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   background-color: transparent;
   float: left;
-  margin: 2vh 2.5vw;
+  margin: 2vh 3.5vw;
   transition: 0.3s ease;
   cursor: pointer;
   transform: scale(1);
@@ -1247,11 +1247,11 @@ Masking
   #social {
     background-color: transparent;
     width: 100vw;
-    height: 50vh;
+    min-height: 40vh;
     position: absolute;
     margin-top: 0;
     margin-left: 0;
-    overflow: hidden;
+    overflow: visible;
   }
   #logo {
     display: flex;
@@ -1501,6 +1501,7 @@ Masking
   }
 
   #team p {
+    margin-top: -1vh;
     font-size: 16px;
   }
   #team_button {
@@ -1513,7 +1514,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 43vh;
+    margin-top: 50vh;
   }
   
   #earth2 {
@@ -1980,11 +1981,11 @@ Masking
   #social {
     background-color: transparent;
     width: 100vw;
-    height: 50vh;
+    min-height: 40vh;
     position: absolute;
     margin-top: 0;
     margin-left: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   #media {
@@ -2181,7 +2182,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 35vh;
+    margin-top: 45vh;
   }
   
   #earth2 {
@@ -2270,7 +2271,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 35vh;
+    margin-top: 45vh;
   }
     
   #earth2 {
@@ -2398,7 +2399,7 @@ Masking
     position: absolute;
     margin-bottom: 0;
     right: 0;
-    margin-top: 35vh;
+    margin-top: 43vh;
   }
   
   #earth2 {
