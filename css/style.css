@@ -433,7 +433,7 @@ a {
   z-index: 100;
   width: 80vw;
   margin: 8vh 9.5vw;
-  min-height: 50vh;
+  min-height: 35vh;
   background-color: #00395E;
   display: flex;
   flex-direction: row;
@@ -474,8 +474,8 @@ a {
 #team p {
   width: 100%;
   margin-top: -3vh;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 3vh;
+  font-weight: 400;
   color: white;
 }
 
@@ -1271,6 +1271,7 @@ Masking
   }
   #team p {
     font-size: 16px;
+    font-weight: 300;
   }
   #media {
     width: 100vw;
@@ -1441,6 +1442,7 @@ Masking
 @media only screen and (max-width: 800px) {
   #team p {
     font-size: 16px;
+    font-weight: 300;
   }
   #end_animation {
     width: 90vw;
@@ -1503,6 +1505,7 @@ Masking
   #team p {
     margin-top: -1vh;
     font-size: 16px;
+    font-weight: 300;
   }
   #team_button {
     font-size: 2.3vh;
