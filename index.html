@@ -35,7 +35,6 @@
         </div>
       </div>
         <ul id="top_nav_list">
-            <!-- <a class="link" id="title" href="./index.html"><li>PIXXEL</li></a> -->
             <a class="link" href="#mission_heading"><li>Mission</li></a>
             <a class="link" href="#team"><li>Partners</li></a>
             <a class="link" href="#team"><li>Team</li></a>
@@ -55,40 +54,39 @@
       <img src="./images/dash_green.svg" alt="" class="orbit" id="orbit3">
     </div>
     <div id="mission">
-      <p id="mission_heading">THE MASTER PLAN </p>
+      <div class="heading_with_bg"><p id="mission_heading">THE MASTER PLAN</p></div>
       <div id="mission_container" class="add-carousel">
           <div class="box">                
               <h1>BUILD</h1>
-              <div class="icon"><img class="square" src="./images/satellite.svg" alt=""></div>
+              <div class="icon"><img class="square" src="./images/satellite.png" alt=""></div>
               <p>Design, manufacture and test our nanosatellites to get them launch-ready.</p></div>
           <div class="box">
               <h1>LAUNCH</h1>
-              <div class="icon"><img class="square" src="./images/rocket-icon.svg" alt=""></div>
+              <div class="icon"><img class="square" src="./images/rocket-icon.png" alt=""></div>
               <p>Launch India’s first nanosatellite constellation and use them to image the Earth’s surface</p>
           </div>
           <div class="box">
               <h1>PREDICT</h1>
-              <div class="icon"><img class="square" src="./images/prediction.svg" alt=""></div>
+              <div class="icon"><img class="square" src="./images/prediction.png" alt=""></div>
               <p>Use our cutting-edge AI engine to make predictions based on our dataset.</p>
           </div>
       </div>
   </div>
   <div id="making" class="desktop">
-      <h1 id="making_heading">OUR SECRET SAUCE </h1>
+      <div class="heading_with_bg"><h1 id="making_heading">OUR SECRET SAUCE</h1></div>
       <div id="making_container">
-        <div id="left">
+        <div class="box2">
           <h1>The Cubesat</h1>
           <p>Firefly is a 3U cubesat with 5-kilogram form factor with a high-resolution imaging payload and structurally optimized for Lower Earth Orbit with incredible processing power.</p>
         </div>
-        <img id="centre_circle" src="images/AI.png" alt="">
-        <div id="right2">
+        <div class="box2">
           <h1>The AI engine</h1>
           <p>The AI engine is designed to process the dataset obtained from the Cubesat to make predictions which are faster and more accurate than any other system to help implement changes.</p>
         </div>
       </div>
   </div>
   <div id="making" class="mobile">
-      <h1 id="making_heading">What we're making: </h1>
+      <div><h1 id="making_heading">OUR SECRET SAUCE</h1></div>
       <div id="making_container" class="add-carousel">
         <div id="left">
           <h1>The Cubesat</h1>
@@ -100,15 +98,24 @@
         </div>
       </div>
   </div>
+  <h1 id="team_heading">The Team</h1>
     <div id="team">
       <div id="team_info">
-        <h1 id="team_heading">The Team</h1>
         <p>Pixxel is a team of undergraduates from BITS Pilani, interested in reinventing space technology in India. Originating from the core team of Hyperloop India, the only Indian finalist team from among the 2500 teams that applied to the prestigious SpaceX Hyperloop Pod Competition. The team thus not only has a prior experience dealing with a project of this magnitude but also the experience of actually building a functioning Hyperloop prototype in an unprecedented two months. Pixxel has now expanded to constitute students and faculty from the top engineering and business schools of the country—namely BITS Pilani, NIT-Surathkal, IIM- Ahmedabad — consulting with space, AI and data experts from organizations like ISRO, NRSC, MapMyIndia and TRA law.
         </p>
         <a href="team.html" id="team_button">Meet the team</a>
       </div>
-      <!-- <div id="team_img">
-      </div> -->
+    </div>
+    <h1 id="reviews_heading">Reviews</h1>
+    <div id="reviews">
+      <div id="review">
+        <div><img  id="review_image" width="200" src="images/kiranKumar.jpg"></div>
+        <div id="review_detail">
+          <h2>Dr. A S Kiran Kumar</h2>
+          <h3>Former Chairman - ISRO</h3>
+          <p>An extraordinary effort by super determined students. Wishing them success in all their efforts.</p>
+        </div>
+      </div>
     </div>
     <div id="partners">
       <h1 id="partners_heading">Our Partners</h1>
@@ -131,50 +138,21 @@
           <div class="partners_logo">
             <img src="images/Miracle.png" alt=""> 
           </div>
-          <!-- <div class="partners_logo">
-            <img src="images/BITS.png" alt=""> 
-          </div> -->
       </div>
-    </div>
-    <div id="reviews">
-      <div id="review">
-        <div><img  id="review_image" width="200" src="images/kiranKumar.jpg"></div>
-        <div id="review_detail">
-          <h2>Dr. A S Kiran Kumar</h2>
-          <h3>Former Chairman - ISRO</h3>
-          <p>An extraordinary effort by super determined students. Wishing them success in all their efforts.</p>
-        </div>
-      </div>
-      <!-- <div id="review">
-        <div id="review_image"><img src="images/kiranKumar.jpg"></div>
-        <div id="review_detail">
-          <h2>Dr. A S Kiran Kumar</h2>
-          <h3>Former Chairman - ISRO</h3>
-          <p>An extraordinary effort by super determined students. An extraordinary effort by super determined students. An extraordinary effort by super determined students.</p>
-        </div>
-      </div>
-      <div id="review">
-        <div id="review_image"><img src="images/kiranKumar.jpg"></div>
-        <div id="review_detail">
-          <h2>Dr. A S Kiran Kumar</h2>
-          <h3>Former Chairman - ISRO</h3>
-          <p>An extraordinary effort by super determined students. An extraordinary effort by super determined students. An extraordinary effort by super determined students.</p>
-        </div>
-      </div> -->
     </div>
     <div id="featured_in">
       <h1>Featured in:</h1>
-      <div class="partners_details add-carousel-2">
-          <div class="partners_logo">
+      <div class="featured_details add-carousel-2">
+          <div class="featured_logo">
             <img src="images/indian-express.jpg" alt=""> 
           </div>
-          <div class="partners_logo">
+          <div class="featured_logo">
             <img src="images/DNA.png" alt=""> 
           </div>
-          <div class="partners_logo">
+          <div class="featured_logo">
             <img src="images/DailyHunt.jpg" alt=""> 
           </div>
-          <div class="partners_logo">
+          <div class="featured_logo">
             <img src="images/indiatimes.png" alt=""> 
         </div>
       </div>
@@ -280,20 +258,6 @@
             $('.add-carousel-2').slick('unslick');
           }
         });
-        // var scene = document.getElementById('scene');
-        // var parallaxInstance = new Parallax(scene, {
-        //   relativeInput: true,
-        // });
-        // window.onresize = function () {
-
-        // var smallScreen = window.matchMedia("(max-width: 600px)");
-        // if(!smallScreen.matches) {
-        // //   $('.add-carousel').slick('unslick');
-        // // document.getElementById('mission').className = 'add-carousel';
-        // }
-        // }
-
-        // parallaxInstance.friction(0.1, 0.1);
     </script>
 </body>
 </html>
