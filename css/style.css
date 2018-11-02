@@ -654,7 +654,7 @@ a {
   justify-content: space-around;
   position: relative;
   margin: 0 20px;
-  flex: 1 0 20%;
+  flex: 1 0 15%;
   width: 20%;
 }
 
@@ -1465,7 +1465,6 @@ Masking
     color: #37A1DD;
     text-align: center;
   }
-  
 }
 
 @media only screen and (max-width: 870px) {
@@ -1533,6 +1532,11 @@ Masking
   }
   .link {
     font-size: 16px;
+  }
+  .featured_logo img, .featured_logo2 img {
+    width: 50%;
+    height: 19vh;
+    margin: 0 auto;
   }
 }
 
