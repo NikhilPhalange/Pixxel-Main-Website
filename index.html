@@ -226,6 +226,13 @@
         if (smallScreen.matches){
           document.getElementsByClassName('desktop')[0].style.display = 'none';
           document.getElementsByClassName('mobile')[0].style.display = 'block';
+        }
+        else {
+          document.getElementsByClassName('desktop')[0].style.display = 'block';
+          document.getElementsByClassName('mobile')[0].style.display = 'none';
+        }
+        var mediumScreen = window.matchMedia("(max-width: 800px)");
+        if (mediumScreen.matches){
           $(document).ready(function(){
             $('.add-carousel-2').slick({
               autoplay: true,
@@ -235,14 +242,20 @@
           });
         }
         else {
-          document.getElementsByClassName('desktop')[0].style.display = 'block';
-          document.getElementsByClassName('mobile')[0].style.display = 'none';
+          $('.add-carousel-2').slick('unslick');
         }
         $(window).resize(function() {
           var smallScreen = window.matchMedia("(max-width: 1000px)");
           if (smallScreen.matches){
             document.getElementsByClassName('desktop')[0].style.display = 'none';
             document.getElementsByClassName('mobile')[0].style.display = 'block';
+          }
+          else {
+            document.getElementsByClassName('desktop')[0].style.display = 'block';
+            document.getElementsByClassName('mobile')[0].style.display = 'none';
+          }
+          var mediumScreen = window.matchMedia("(max-width: 800px)");
+          if (mediumScreen.matches){
             $(document).ready(function(){
               $('.add-carousel-2').slick({
                 autoplay: true,
@@ -252,8 +265,6 @@
             });
           }
           else {
-            document.getElementsByClassName('desktop')[0].style.display = 'block';
-            document.getElementsByClassName('mobile')[0].style.display = 'none';
             $('.add-carousel-2').slick('unslick');
           }
         });
