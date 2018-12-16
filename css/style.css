@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
 * {
   scroll-behavior: smooth;
 }
@@ -382,7 +383,7 @@ a {
   width: 90%;
   font-weight: 400;
   color: black;
-  font-size: 3vh;
+  font-size: 2.7vh;
 }
 
 #left h1 {
@@ -423,7 +424,7 @@ a {
   flex-direction: column;
   font-weight: 400;
   color: black;
-  font-size: 3vh;
+  font-size: 2.7vh;
 }
 
 #right2 p {
@@ -444,7 +445,7 @@ a {
   flex-direction: column;
   font-weight: 400;
   color: black;
-  font-size: 3vh;
+  font-size: 2.7vh;
 }
 
 #team {
@@ -484,7 +485,7 @@ a {
 
 #team_heading{
   margin-top: 3vh;
-  font-size: 4vw;
+  font-size: 3.7vw;
   color: #3C94BA;
   font-weight: 200;
   margin-bottom: 30px;
@@ -493,7 +494,7 @@ a {
 #team p {
   width: 100%;
   margin-top: -3vh;
-  font-size: 3vh;
+  font-size: 2.7vh;
   font-weight: 400;
   color: white;
 }
@@ -533,7 +534,7 @@ a {
 #partners_heading {
   margin-top: 0;
   color: #04151C;
-  font-size: 4vw;
+  font-size: 3.7vw;
   font-weight: 200;
 }
 
@@ -614,7 +615,7 @@ a {
 
 #review p {
   margin: 10px;
-  font-size: 1.7vw;
+  font-size: 2.7vh;
   color: whitesmoke;
   font-weight: 200;
 }
@@ -634,7 +635,7 @@ a {
 
 #featured_in h1 {
   margin-top: 0vh;
-  font-size: 3vw;
+  font-size: 3.7vw;
   color: #465258;
   font-weight: 300;
  }
@@ -1292,26 +1293,33 @@ Masking
   #centre_circle {
     display: none;
   }
+
   #right p {
     margin: 2vw 7vw;
   }
+
   .partners_logo img {
     width: 100%;
     border-radius: 5px;
     height: 250px;
   }
+
   #team_title_new {
     font-size: 45px;
   }
+
   #top_nav {
     height: 15vh;
   }
+
   .parallax {
     background: none;
   }
+
   .link {
     font-size: 18px;
   }
+
   #social {
     background-color: transparent;
     width: 100vw;
@@ -1321,6 +1329,7 @@ Masking
     margin-left: 0;
     overflow: visible;
   }
+
   #logo {
     display: flex;
     position: absolute;
@@ -1337,10 +1346,12 @@ Masking
     margin: 0;
     padding: 0;
   }
+
   #team p {
-    font-size: 16px;
+    font-size: 2.7vh;
     font-weight: 300;
   }
+
   #media {
     width: 100vw;
     height: 20vh;
@@ -1381,7 +1392,7 @@ Masking
   }
 
   #review_detail p {
-    font-size: 20px;
+    font-size: 2.7vh;
   }
 
   #earth2 {
@@ -1503,7 +1514,7 @@ Masking
 
 @media only screen and (max-width: 800px) {
   #team p {
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 300;
   }
   #end_animation {
@@ -1571,7 +1582,7 @@ Masking
 
   #team p {
     margin-top: -1vh;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 300;
   }
   #team_button {
@@ -1736,9 +1747,7 @@ Masking
     width: 80%;
     height: 200px;
   }
-  #team_info p {
-    font-size: 16px;
-  }
+
   #team_title h1 {
     font-size: 50px;
   }
@@ -1876,11 +1885,11 @@ Masking
       animation: rotate 40s linear infinite;
   }
   #mission_heading {
-    font-size: 4vh;
+    /* font-size: 4vh; */
   }
  
   #team_title h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
   .member {
     width: 50vw;
@@ -1911,11 +1920,11 @@ Masking
     text-align: left;
   }
   .square {
-      margin: 0 auto;
-      width: 6vw;
-      height: 6vw;
-      background-color: white;
-      border-radius: 4px;
+    margin: 0 auto;
+    width: 6vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 4px;
   }
   .icon {
     width: 25%;
@@ -1929,7 +1938,7 @@ Masking
   }
   .box h1 {
     text-align: center;
-    font-size: 5vw;
+    /* font-size: 5vw; */
     font-weight: 600;
   }
   .box:focus {
@@ -1951,12 +1960,9 @@ Masking
     margin: 0 auto;
     padding: 0;
   }
-  #making_container p {
-    font-size: 2.2vh;
-  }
   #making_container > h1 {
     margin-top: 0vh;
-    font-size: 5vw;
+    /* font-size: 5vw; */
   }
 
   #making_container h1 {
@@ -1984,9 +1990,9 @@ Masking
     width: 80%;
     padding: 5px;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
-    font-size: 2vh;
+    font-size: 2.7vh;
   }
   #left p {
     margin: 2vw 8vw;
@@ -1994,9 +2000,9 @@ Masking
     width: 80%;
     padding: 5px;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
-    font-size: 2vh;
+    font-size: 2.7vh;
   }
   
   #team {
